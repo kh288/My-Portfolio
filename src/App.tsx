@@ -1,6 +1,5 @@
-import './App.css';
 import { Button } from '@chakra-ui/react';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
+import { ColorModeSwitcher } from './components/ColorModeSwitcher';
 
 function App() {
   return (
