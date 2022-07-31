@@ -5,11 +5,12 @@ function Navbar() {
   return (
     <Box display='flex' justifyContent='space-between' marginX='auto' margin={3}>
       <Box display='flex' gap={3}>
-        <Button colorScheme='blue'>Something!</Button>
-        <Button colorScheme='purple'>Another thing!</Button>
+        <Button colorScheme='blue'>About</Button>
+        <Button>Portfolio</Button>
+        <Button>Contact</Button>
       </Box>
       <Box>
-        <ColorModeSwitcher color='purple' />
+        <ColorModeSwitcher />
       </Box>
     </Box>
   );
