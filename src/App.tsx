@@ -1,11 +1,9 @@
-import { Button } from '@chakra-ui/react';
-import { ColorModeSwitcher } from './components/ColorModeSwitcher';
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
-      <ColorModeSwitcher />
-      <Button>Press Me!</Button>
+      <Navbar />
     </>
   );
 }
