@@ -1,9 +1,12 @@
-import { Box, Button } from "@chakra-ui/react";
+import { Box, Button, useColorModeValue } from "@chakra-ui/react";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
 
+
 function Navbar() {
+  const bg = useColorModeValue('gray.100', 'gray.900');
+
   return (
-    <Box display='flex' justifyContent='space-between' marginX='auto' margin={2} maxWidth='1400'>
+    <Box bg={bg} display='flex' justifyContent='space-between' marginX='auto' padding={2}>
       <Box display='flex' gap={2}>
         <Button colorScheme='purple'>About</Button>
         <Button>Portfolio</Button>
