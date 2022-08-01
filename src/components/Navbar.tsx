@@ -1,7 +1,6 @@
 import { Box, Button, useColorModeValue } from "@chakra-ui/react";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
 
-
 function Navbar() {
   const bg = useColorModeValue('gray.100', 'gray.900');
 
