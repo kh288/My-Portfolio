@@ -9,9 +9,7 @@ function Navbar() {
         <Button>Portfolio</Button>
         <Button>Contact</Button>
       </Box>
-      <Box>
-        <ColorModeSwitcher />
-      </Box>
+      <ColorModeSwitcher />
     </Box>
   );
 }

@@ -1,9 +1,11 @@
+import { Image, Box } from '@chakra-ui/react';
+import KevinPic from '../components/KevinPic';
 
 function Home() {
   return (
-    <>
-      <div>Home</div>
-    </>
+    <Box>
+      <KevinPic />
+    </Box>
   );
 }
 
