@@ -1,0 +1,11 @@
+node_modules
+.eslintignore
+.eslintrc.js
+.prettierrc
+.gitignore
+*.json
+*.md
+*.txt
+*.css
+*.scss
+*.svg
