@@ -7,19 +7,15 @@ function Home() {
 
   return (
     <Box
-      margin="auto"
-      marginY={2}
-      marginX={2}
-      maxWidth={800}
+      margin={2}
+      padding={2}
       bg={bg}
-      display="flex"
+      display="grid"
       justifyContent="center"
       rounded="lg"
     >
-      <Box>
-        <p>The quick brown fox jumps over the lazy dog</p>
-        <Image borderRadius="50%" maxWidth={256} src={KevinPic} />
-      </Box>
+      <p>The quick brown fox jumps over the lazy dog</p>
+      <Image borderRadius="50%" maxWidth={256} src={KevinPic} />
     </Box>
   );
 }
