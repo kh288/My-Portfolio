@@ -1,20 +1,39 @@
 import React from 'react';
-import { Box, useColorModeValue, Image } from '@chakra-ui/react';
+import {
+  Box, useColorModeValue, Image, Heading,
+} from '@chakra-ui/react';
 import KevinPic from '../assets/kevin-pic.png';
 
 function Home() {
-  const bg = useColorModeValue('gray.100', 'gray.900');
+  const space = 2;
+  // Color backgrounds
+  const card = useColorModeValue('gray.100', 'gray.800');
+  const subCard = useColorModeValue('gray.200', 'gray.700');
+  const borderColor = useColorModeValue('gray.300', 'gray.600');
 
   return (
     <Box
-      margin={2}
-      padding={2}
-      bg={bg}
+      margin={space}
+      padding={space}
+      bg={card}
       display="grid"
       justifyContent="center"
       rounded="lg"
     >
-      <Image borderRadius="50%" maxWidth={256} src={KevinPic} />
+      <Box
+        margin={space}
+        padding={space}
+        bg={subCard}
+        rounded="lg"
+        borderStyle="solid"
+        borderWidth="thin"
+        borderColor={borderColor}
+      >
+        <Heading justifyContent="center">About Me</Heading>
+        <p>Hello! I&apos;m Kevin Hernandez.</p>
+        <p>This is a simple portfolio site using Typescript and Chakra UI.</p>
+      </Box>
+      <Image position="absolute" right={space} bottom={space} borderRadius="50%" maxWidth={256} src={KevinPic} />
     </Box>
   );
 }

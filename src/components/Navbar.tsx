@@ -3,7 +3,7 @@ import { Box, Button, useColorModeValue } from '@chakra-ui/react';
 import ColorModeSwitcher from './ColorModeSwitcher';
 
 function Navbar() {
-  const bg = useColorModeValue('gray.100', 'gray.900');
+  const bg = useColorModeValue('gray.100', 'gray.800');
 
   return (
     <Box bg={bg} display="flex" justifyContent="space-between" marginX="auto" padding={2}>
