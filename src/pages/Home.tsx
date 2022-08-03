@@ -14,7 +14,6 @@ function Home() {
       justifyContent="center"
       rounded="lg"
     >
-      <p>The quick brown fox jumps over the lazy dog</p>
       <Image borderRadius="50%" maxWidth={256} src={KevinPic} />
     </Box>
   );

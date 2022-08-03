@@ -7,7 +7,7 @@ function App() {
   const gradient = 'linear(to-l, blue.500, purple.500 50%)';
 
   return (
-    <Box bgGradient={gradient} height="100%">
+    <Box bgGradient={gradient} height="calc(100vh)">
       <Navbar />
       <Box maxWidth={800} mx="auto">
         <Home />
