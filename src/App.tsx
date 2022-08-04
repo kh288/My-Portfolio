@@ -30,7 +30,7 @@ function App() {
         animate={{ y: 0 }}
         initial={{ y: -50 }}
       >
-        <Box maxWidth={800} mx="auto">
+        <Box maxWidth={800} mx="auto" marginBottom={3}>
           {renderPage()}
         </Box>
       </motion.div>
