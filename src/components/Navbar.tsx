@@ -5,12 +5,23 @@ import {
 import { FaHome } from 'react-icons/fa';
 import ColorModeSwitcher from './ColorModeSwitcher';
 
-function Navbar() {
-  // const bg = useColorModeValue('gray.100', 'gray.800');
+type pageProps = {
+  currentPage: string;
+  handleCurrentPage: any;
+}
+
+function Navbar({ currentPage, handleCurrentPage }:pageProps) {
   const bg = useColorModeValue('whiteAlpha.600', 'blackAlpha.600');
 
   return (
-    <Box bg={bg} display="flex" justifyContent="space-between" marginX="auto" padding={2} shadow="lg">
+    <Box
+      bg={bg}
+      display="flex"
+      justifyContent="space-between"
+      marginX="auto"
+      padding={2}
+      shadow="lg"
+    >
       <IconButton
         size="md"
         fontSize="lg"
@@ -20,9 +31,24 @@ function Navbar() {
         aria-label="Home Button"
       />
       <Box display="flex" gap={2}>
-        <Button colorScheme="purple">About</Button>
-        <Button>Portfolio</Button>
-        <Button>Contact</Button>
+        <Button
+          colorScheme={currentPage === 'Home' ? 'purple' : 'gray'}
+          onClick={() => handleCurrentPage('Home')}
+        >
+          About
+        </Button>
+        <Button
+          colorScheme={currentPage === 'Projects' ? 'purple' : 'gray'}
+          onClick={() => handleCurrentPage('Projects')}
+        >
+          Projects
+        </Button>
+        <Button
+          colorScheme={currentPage === 'Contact' ? 'purple' : 'gray'}
+          onClick={() => handleCurrentPage('Contact')}
+        >
+          Contact
+        </Button>
       </Box>
       <ColorModeSwitcher />
     </Box>
