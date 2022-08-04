@@ -28,6 +28,7 @@ function Navbar({ currentPage, handleCurrentPage }:pageProps) {
         variant="ghost"
         color="current"
         icon={<Icon as={FaHome} />}
+        onClick={() => handleCurrentPage('Home')}
         aria-label="Home Button"
       />
       <Box display="flex" gap={2}>

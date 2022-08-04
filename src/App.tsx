@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Box } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
@@ -25,9 +26,14 @@ function App() {
   return (
     <Box bgGradient={gradientL} height="calc(100vh)">
       <Navbar currentPage={currentPage} handleCurrentPage={handleCurrentPage} />
-      <Box maxWidth={800} mx="auto">
-        {renderPage()}
-      </Box>
+      <motion.div
+        animate={{ y: 0 }}
+        initial={{ y: -50 }}
+      >
+        <Box maxWidth={800} mx="auto">
+          {renderPage()}
+        </Box>
+      </motion.div>
     </Box>
   );
 }
