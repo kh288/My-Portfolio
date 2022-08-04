@@ -4,6 +4,7 @@ import {
 } from '@chakra-ui/react';
 import New5hark from '../assets/new5hark-todo-list-app.png';
 import SocialBurger from '../assets/social-burger-app.png';
+import SocialMediaAPI from '../assets/social-media-api.png';
 
 function Projects() {
   const space = 3;
@@ -31,10 +32,10 @@ function Projects() {
         borderColor={borderColor}
       >
         <Heading display="flex" justifyContent="center" marginBottom={space}>Projects</Heading>
-        <p>
+        {/* <p>
           Here&apos;s some projects I&apos;ve worked on
           throughout the UC Berkeley Extension program
-        </p>
+        </p> */}
       </Box>
       <Box
         margin={space}
@@ -46,8 +47,9 @@ function Projects() {
         borderColor={borderColor}
       >
         <Grid templateColumns="repeat(2, 1fr)" gap={space}>
-          <GridItem colSpan={2}><Image src={New5hark} /></GridItem>
-          <GridItem colSpan={2}><Image src={SocialBurger} /></GridItem>
+          <GridItem colSpan={1}><Image src={New5hark} /></GridItem>
+          <GridItem colSpan={1}><Image src={SocialBurger} /></GridItem>
+          <GridItem colSpan={1}><Image src={SocialMediaAPI} /></GridItem>
           {/* <Box>
           </Box> */}
 
