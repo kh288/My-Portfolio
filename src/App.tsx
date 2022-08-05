@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box } from '@chakra-ui/react';
+import { Box, useColorModeValue } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -8,7 +8,9 @@ import Contact from './pages/Contact';
 
 function App() {
   const blueToPurple = 'linear(to-l, blue.500, purple.500 60%)';
-  const gradientL = 'linear(to-b, #00000000, white)';
+  const bgColor = useColorModeValue('white', 'gray.800');
+  const gradientL = `linear(to-b, #00000000, ${bgColor})`;
+
   const [currentPage, setCurrentPage] = useState('About');
 
   const renderPage = () => {
@@ -25,8 +27,8 @@ function App() {
   const handleCurrentPage = (page: string) => setCurrentPage(page);
 
   return (
-    <Box bgGradient={gradientL}>
-      <Box bgGradient={blueToPurple} height="calc(100vh)">
+    <Box bgGradient={blueToPurple}>
+      <Box bgGradient={gradientL} height="calc(100vh)">
         <Navbar
           currentPage={currentPage}
           handleCurrentPage={handleCurrentPage}

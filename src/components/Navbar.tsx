@@ -16,6 +16,8 @@ type pageProps = {
 
 function Navbar({ currentPage, handleCurrentPage }: pageProps) {
   const bg = useColorModeValue('whiteAlpha.600', 'blackAlpha.600');
+  const margin = 3;
+  const padding = 3;
 
   return (
     <Box
@@ -23,8 +25,8 @@ function Navbar({ currentPage, handleCurrentPage }: pageProps) {
       display="flex"
       justifyContent="space-between"
       marginX="auto"
-      padding={2}
-      marginBottom={3}
+      padding={padding}
+      marginBottom={margin}
       shadow="lg"
     >
       <IconButton
@@ -36,7 +38,7 @@ function Navbar({ currentPage, handleCurrentPage }: pageProps) {
         onClick={() => handleCurrentPage('Home')}
         aria-label="Home Button"
       />
-      <Box display="flex" gap={2}>
+      <Box display="flex" gap={margin}>
         <Button
           colorScheme={currentPage === 'Home' ? 'purple' : 'gray'}
           onClick={() => handleCurrentPage('Home')}
