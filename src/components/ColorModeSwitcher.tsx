@@ -3,7 +3,7 @@ import {
   useColorMode,
   useColorModeValue,
   IconButton,
-  IconButtonProps,
+  IconButtonProps
 } from '@chakra-ui/react';
 import { FaMoon, FaSun } from 'react-icons/fa';
 

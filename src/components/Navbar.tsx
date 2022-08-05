@@ -1,6 +1,10 @@
 import * as React from 'react';
 import {
-  Box, Button, useColorModeValue, Icon, IconButton,
+  Box,
+  Button,
+  useColorModeValue,
+  Icon,
+  IconButton
 } from '@chakra-ui/react';
 import { FaHome } from 'react-icons/fa';
 import ColorModeSwitcher from './ColorModeSwitcher';
@@ -8,9 +12,9 @@ import ColorModeSwitcher from './ColorModeSwitcher';
 type pageProps = {
   currentPage: string;
   handleCurrentPage: any;
-}
+};
 
-function Navbar({ currentPage, handleCurrentPage }:pageProps) {
+function Navbar({ currentPage, handleCurrentPage }: pageProps) {
   const bg = useColorModeValue('whiteAlpha.600', 'blackAlpha.600');
 
   return (
@@ -20,6 +24,7 @@ function Navbar({ currentPage, handleCurrentPage }:pageProps) {
       justifyContent="space-between"
       marginX="auto"
       padding={2}
+      marginBottom={3}
       shadow="lg"
     >
       <IconButton

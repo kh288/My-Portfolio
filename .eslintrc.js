@@ -5,25 +5,29 @@ module.exports = {
     node: true,
   },
   extends: [
-    'plugin:react/recommended',
+    "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
-    'react-app',
-    'airbnb'
+    "airbnb",
+    "prettier",
+    "react-app",
   ],
-  parser: '@typescript-eslint/parser',
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
       jsx: false,
     },
-    ecmaVersion: 'latest',
-    sourceType: 'module',
+    ecmaVersion: "latest",
+    sourceType: "module",
   },
   plugins: [
-    'react',
-    '@typescript-eslint',
+    "react",
+    "prettier",
+    "@typescript-eslint",
   ],
   rules: {
+    "prettier/prettier": ["error"],
     "no-use-before-define": "off",
+    "comma-dangle": ["error", "never"],
     "@typescript-eslint/no-use-before-define": ["error"],
     "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
     "react/function-component-definition": "off",

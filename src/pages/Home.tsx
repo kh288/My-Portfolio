@@ -3,20 +3,22 @@ import {
   Box,
   useColorModeValue,
   // Image,
-  Heading,
+  Heading
 } from '@chakra-ui/react';
 // import KevinPic from '../assets/kevin-pic.png';
 
 function Home() {
-  const space = 3;
+  const margin = 3;
+  const padding = 3;
   const card = useColorModeValue('whiteAlpha.600', 'blackAlpha.600');
   const subCard = useColorModeValue('gray.200', 'gray.700');
   const borderColor = useColorModeValue('gray.300', 'gray.600');
 
   return (
     <Box
-      margin={space}
-      padding={space}
+      margin={margin}
+      padding={padding}
+      gap={padding}
       bg={card}
       display="grid"
       justifyContent="center"
@@ -24,15 +26,16 @@ function Home() {
       shadow="lg"
     >
       <Box
-        margin={space}
-        padding={space}
+        padding={padding}
         bg={subCard}
         rounded="lg"
         borderStyle="solid"
         borderWidth="thin"
         borderColor={borderColor}
       >
-        <Heading display="flex" justifyContent="center" marginBottom={space}>About Me</Heading>
+        <Heading display="flex" justifyContent="center" marginBottom={margin}>
+          About Me
+        </Heading>
         <p>Hello! I&apos;m Kevin Hernandez.</p>
         <p>Made with React Typescript and Chakra UI.</p>
         <p>Recent UC Berkeley Extension Graduate</p>
@@ -41,8 +44,7 @@ function Home() {
         right={space} bottom={space} borderRadius="50%" maxWidth={256} src={KevinPic} /> */}
       </Box>
       <Box
-        margin={space}
-        padding={space}
+        padding={padding}
         bg={subCard}
         rounded="lg"
         borderStyle="solid"
@@ -50,9 +52,10 @@ function Home() {
         borderColor={borderColor}
       >
         <p>
-          Currently working part time at 2U as a Web Instructional Specialist on MERN stack.
-          I&apos;m currently persuing a frontend position.
-          Feel free to checkout my projects and reach out to me, lets see if we can work together!
+          Currently working part time at 2U as a Web Instructional Specialist on
+          MERN stack. I&apos;m currently persuing a frontend position. Feel free
+          to checkout my projects and reach out to me, lets see if we can work
+          together!
         </p>
       </Box>
     </Box>
