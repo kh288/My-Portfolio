@@ -11,7 +11,7 @@ import ColorModeSwitcher from './ColorModeSwitcher';
 
 type pageProps = {
   currentPage: string;
-  handleCurrentPage: any;
+  handleCurrentPage: (input: string) => void;
 };
 
 function Navbar({ currentPage, handleCurrentPage }: pageProps) {
