@@ -5,11 +5,15 @@ import {
   useColorModeValue,
   Image,
   Grid,
-  GridItem
+  GridItem,
+  UnorderedList,
+  ListItem,
+  Center
 } from '@chakra-ui/react';
 import New5hark from '../assets/new5hark-todo-list-app.png';
 import SocialBurger from '../assets/social-burger-app.png';
 import SocialMediaAPI from '../assets/social-media-api.png';
+import StockPortfolioApp from '../assets/stock-portfolio-analyzer-app.png';
 
 function Projects() {
   const margin = 3;
@@ -51,6 +55,36 @@ function Projects() {
       >
         <Grid templateColumns="repeat(2, 1fr)">
           <GridItem colSpan={1}>
+            <Grid templateColumns="repeat(2, 1fr)">
+              <GridItem colSpan={1}>
+                <Center>
+                  <Heading size="md">Frontend</Heading>
+                </Center>
+                <Center>
+                  <UnorderedList>
+                    <ListItem>React</ListItem>
+                    <ListItem>Sass</ListItem>
+                    <ListItem>Chart.js</ListItem>
+                    <ListItem>Tailwind.css</ListItem>
+                    <ListItem>Daisy UI</ListItem>
+                  </UnorderedList>
+                </Center>
+              </GridItem>
+              <GridItem>
+                <Center>
+                  <Heading size="md">Backend</Heading>
+                </Center>
+                <Center>
+                  <UnorderedList>
+                    <ListItem>Node.js</ListItem>
+                    <ListItem>Express</ListItem>
+                    <ListItem>MongoDB</ListItem>
+                    <ListItem>Mongoose ODM</ListItem>
+                    <ListItem>JSON WebToken</ListItem>
+                  </UnorderedList>
+                </Center>
+              </GridItem>
+            </Grid>
             <Image src={New5hark} />
           </GridItem>
           <GridItem colSpan={1}>
@@ -58,6 +92,9 @@ function Projects() {
           </GridItem>
           <GridItem colSpan={1}>
             <Image src={SocialMediaAPI} />
+          </GridItem>
+          <GridItem>
+            <Image src={StockPortfolioApp} />
           </GridItem>
         </Grid>
       </Box>
