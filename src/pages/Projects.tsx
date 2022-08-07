@@ -9,8 +9,11 @@ import {
   UnorderedList,
   ListItem,
   Center,
-  Button
+  Button,
+  Text,
+  Link
 } from '@chakra-ui/react';
+import { ExternalLinkIcon } from '@chakra-ui/icons';
 import New5hark from '../assets/new5hark-todo-list-app.png';
 import SocialBurger from '../assets/social-burger-app.png';
 import SocialMediaAPI from '../assets/social-media-api.png';
@@ -55,19 +58,31 @@ function Projects() {
         borderColor={borderColor}
       >
         <Grid templateColumns="repeat(2, 1fr)">
-          <GridItem colSpan={1}>
-            <Heading padding={padding} textAlign="center" size="lg">
+          <GridItem
+            colSpan={1}
+            bg={card}
+            rounded="md"
+            padding={padding}
+            border="solid 1px"
+            borderColor={borderColor}
+            marginBottom={margin}
+          >
+            <Heading marginBottom={margin} textAlign="center" size="lg">
               New5hark
             </Heading>
-            <Grid templateColumns="repeat(2, 1fr)" gap={padding}>
-              <GridItem
-                colSpan={1}
-                bg={card}
-                rounded="md"
-                padding={padding}
-                border="solid 1px"
-                borderColor={borderColor}
-              >
+            <Text>
+              New5hark is a simple day joyfull builder app, where users can
+              create their own activities and keep track of their activities.
+              Users will have the ability to create an account and have access
+              to their own dashboard which will contain their own activities and
+              tracking status.
+            </Text>
+            <Grid
+              templateColumns="repeat(2, 1fr)"
+              gap={padding}
+              marginTop={margin}
+            >
+              <GridItem colSpan={1}>
                 <Heading paddingLeft="3" size="md">
                   Frontend
                 </Heading>
@@ -81,14 +96,7 @@ function Projects() {
                   </UnorderedList>
                 </Center>
               </GridItem>
-              <GridItem
-                colSpan={1}
-                bg={card}
-                rounded="md"
-                padding={padding}
-                border="solid 1px"
-                borderColor={borderColor}
-              >
+              <GridItem colSpan={1}>
                 <Heading paddingLeft="3" size="md">
                   Backend
                 </Heading>
@@ -98,12 +106,25 @@ function Projects() {
                     <ListItem>Express</ListItem>
                     <ListItem>MongoDB</ListItem>
                     <ListItem>Mongoose ODM</ListItem>
-                    <ListItem>JSON WebToken</ListItem>
+                    <ListItem>REST API Routes</ListItem>
                   </UnorderedList>
                 </Center>
               </GridItem>
-              <Button colorScheme="purple">Deployment</Button>
-              <Button colorScheme="blue">Repository</Button>
+              <Center>
+                <Link href="https://new5hark.herokuapp.com/" isExternal>
+                  <Button colorScheme="purple">
+                    Deployment
+                    <ExternalLinkIcon ml={margin} />
+                  </Button>
+                </Link>
+              </Center>
+              <Center>
+                <Link href="https://github.com/sharkby7e/new5hark" isExternal>
+                  <Button colorScheme="blue">
+                    Repository <ExternalLinkIcon ml={margin} />
+                  </Button>
+                </Link>
+              </Center>
             </Grid>
             <Image src={New5hark} />
           </GridItem>

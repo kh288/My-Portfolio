@@ -7,7 +7,10 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 
 function App() {
-  const blueToPurple = 'linear(to-l, blue.500, purple.500 60%)';
+  const blue = useColorModeValue('#3182CE', '#2C5282');
+  const purple = useColorModeValue('#805AD5', '#553C9A');
+  const blueToPurple = `linear(to-l, ${blue}, ${purple} 60%)`;
+  // const blueToPurple = 'linear(to-l, blue.500, purple.500 60%)';
   const bgColor = useColorModeValue('white', 'gray.800');
   const gradientL = `linear(to-b, #00000000, ${bgColor})`;
 
@@ -34,7 +37,7 @@ function App() {
           handleCurrentPage={handleCurrentPage}
         />
         <motion.div animate={{ y: 0 }} initial={{ y: -50 }}>
-          <Box maxWidth={800} mx="auto">
+          <Box maxWidth={1024} mx="auto">
             {renderPage()}
           </Box>
         </motion.div>
