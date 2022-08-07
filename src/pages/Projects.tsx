@@ -25,6 +25,7 @@ function Projects() {
   const card = useColorModeValue('whiteAlpha.600', 'blackAlpha.600');
   const subCard = useColorModeValue('gray.200', 'gray.700');
   const borderColor = useColorModeValue('gray.300', 'gray.600');
+  // 750px width minimum for 2 cols
 
   return (
     <Box
@@ -57,7 +58,7 @@ function Projects() {
         borderWidth="thin"
         borderColor={borderColor}
       >
-        <Grid templateColumns="repeat(2, 1fr)">
+        <Grid templateColumns="repeat(2, 1fr)" gap={margin}>
           <GridItem
             colSpan={1}
             bg={card}
@@ -75,7 +76,8 @@ function Projects() {
               create their own activities and keep track of their activities.
               Users will have the ability to create an account and have access
               to their own dashboard which will contain their own activities and
-              tracking status.
+              tracking status. Each Activity is stored onto a MongoDB database
+              and accessed via this React app.
             </Text>
             <Grid
               templateColumns="repeat(2, 1fr)"
@@ -113,7 +115,7 @@ function Projects() {
               <Center>
                 <Link href="https://new5hark.herokuapp.com/" isExternal>
                   <Button colorScheme="purple">
-                    Deployment
+                    Deployed Link
                     <ExternalLinkIcon ml={margin} />
                   </Button>
                 </Link>
@@ -121,14 +123,85 @@ function Projects() {
               <Center>
                 <Link href="https://github.com/sharkby7e/new5hark" isExternal>
                   <Button colorScheme="blue">
-                    Repository <ExternalLinkIcon ml={margin} />
+                    Github Repo <ExternalLinkIcon ml={margin} />
                   </Button>
                 </Link>
               </Center>
             </Grid>
             <Image src={New5hark} />
           </GridItem>
-          <GridItem colSpan={1}>
+          <GridItem
+            colSpan={1}
+            bg={card}
+            rounded="md"
+            padding={padding}
+            border="solid 1px"
+            borderColor={borderColor}
+            marginBottom={margin}
+          >
+            <Heading marginBottom={margin} textAlign="center" size="lg">
+              Soical Burger
+            </Heading>
+            <Text>
+              Social Burger is a site in which users interact with each other by
+              sharing their own customized burger. On social burger, our main
+              goal is to connect with people with a fun and interactive
+              experience. In this app users are greeted by the home page with
+              other user&apos;s posted burgers. The user is promted to login
+              before they are able to create their own burger or comment on a
+              burger. If the user does not already have an account, they can
+              register. After that the user my comment on burgers, like them,
+              create their own, and viewe burgers that they have previously made
+              if applicable.
+            </Text>
+            <Grid
+              templateColumns="repeat(2, 1fr)"
+              gap={padding}
+              marginTop={margin}
+            >
+              <GridItem colSpan={1}>
+                <Heading paddingLeft="3" size="md">
+                  Frontend
+                </Heading>
+                <Center>
+                  <UnorderedList>
+                    <ListItem>Handlebars</ListItem>
+                    <ListItem>CSS</ListItem>
+                    <ListItem>Javascript</ListItem>
+                    <ListItem>Bootstrap</ListItem>
+                  </UnorderedList>
+                </Center>
+              </GridItem>
+              <GridItem colSpan={1}>
+                <Heading paddingLeft="3" size="md">
+                  Backend
+                </Heading>
+                <Center>
+                  <UnorderedList>
+                    <ListItem>Node.js</ListItem>
+                    <ListItem>Express</ListItem>
+                    <ListItem>MySQL</ListItem>
+                    <ListItem>Sequelize ODM</ListItem>
+                    <ListItem>REST API Routes</ListItem>
+                  </UnorderedList>
+                </Center>
+              </GridItem>
+              <Center>
+                <Link href="https://social-burger.herokuapp.com" isExternal>
+                  <Button colorScheme="purple">
+                    Deployed Link
+                    <ExternalLinkIcon ml={margin} />
+                  </Button>
+                </Link>
+              </Center>
+              <Center>
+                <Link href="https://github.com/kh288/Social-Burger" isExternal>
+                  <Button colorScheme="blue">
+                    Github Repo <ExternalLinkIcon ml={margin} />
+                  </Button>
+                </Link>
+              </Center>
+            </Grid>
             <Image src={SocialBurger} />
           </GridItem>
           <GridItem colSpan={1}>
