@@ -8,7 +8,8 @@ import {
   GridItem,
   UnorderedList,
   ListItem,
-  Center
+  Center,
+  Button
 } from '@chakra-ui/react';
 import New5hark from '../assets/new5hark-todo-list-app.png';
 import SocialBurger from '../assets/social-burger-app.png';
@@ -55,11 +56,21 @@ function Projects() {
       >
         <Grid templateColumns="repeat(2, 1fr)">
           <GridItem colSpan={1}>
-            <Grid templateColumns="repeat(2, 1fr)">
-              <GridItem colSpan={1}>
-                <Center>
-                  <Heading size="md">Frontend</Heading>
-                </Center>
+            <Heading padding={padding} textAlign="center" size="lg">
+              New5hark
+            </Heading>
+            <Grid templateColumns="repeat(2, 1fr)" gap={padding}>
+              <GridItem
+                colSpan={1}
+                bg={card}
+                rounded="md"
+                padding={padding}
+                border="solid 1px"
+                borderColor={borderColor}
+              >
+                <Heading paddingLeft="3" size="md">
+                  Frontend
+                </Heading>
                 <Center>
                   <UnorderedList>
                     <ListItem>React</ListItem>
@@ -70,10 +81,17 @@ function Projects() {
                   </UnorderedList>
                 </Center>
               </GridItem>
-              <GridItem>
-                <Center>
-                  <Heading size="md">Backend</Heading>
-                </Center>
+              <GridItem
+                colSpan={1}
+                bg={card}
+                rounded="md"
+                padding={padding}
+                border="solid 1px"
+                borderColor={borderColor}
+              >
+                <Heading paddingLeft="3" size="md">
+                  Backend
+                </Heading>
                 <Center>
                   <UnorderedList>
                     <ListItem>Node.js</ListItem>
@@ -84,6 +102,8 @@ function Projects() {
                   </UnorderedList>
                 </Center>
               </GridItem>
+              <Button colorScheme="purple">Deployment</Button>
+              <Button colorScheme="blue">Repository</Button>
             </Grid>
             <Image src={New5hark} />
           </GridItem>
