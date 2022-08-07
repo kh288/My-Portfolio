@@ -18,6 +18,7 @@ import New5hark from '../assets/new5hark-todo-list-app.png';
 import SocialBurger from '../assets/social-burger-app.png';
 import SocialMediaAPI from '../assets/social-media-api.png';
 import StockPortfolioApp from '../assets/stock-portfolio-analyzer-app.png';
+import ProjectCard from '../components/ProjectCard';
 
 function Projects() {
   const margin = 3;
@@ -64,77 +65,32 @@ function Projects() {
         borderColor={borderColor}
       >
         <Grid templateColumns={colProjectTemplate} gap={margin}>
-          <GridItem
-            colSpan={1}
-            bg={card}
-            rounded="md"
-            padding={padding}
-            border="solid 1px"
-            borderColor={borderColor}
-            marginBottom={margin}
-          >
-            <Heading marginBottom={margin} textAlign="center" size="lg">
-              New5hark
-            </Heading>
-            <Text>
-              New5hark is a simple day joyfull builder app, where users can
-              create their own activities and keep track of their activities.
-              Users will have the ability to create an account and have access
-              to their own dashboard which will contain their own activities and
-              tracking status. Each Activity is stored onto a MongoDB database
-              and accessed via this React app.
-            </Text>
-            <Grid
-              templateColumns="repeat(2, 1fr)"
-              gap={padding}
-              marginTop={margin}
-            >
-              <GridItem colSpan={1}>
-                <Heading paddingLeft="3" size="md">
-                  Frontend
-                </Heading>
-                <Center>
-                  <UnorderedList>
-                    <ListItem>React</ListItem>
-                    <ListItem>Sass</ListItem>
-                    <ListItem>Chart.js</ListItem>
-                    <ListItem>Tailwind.css</ListItem>
-                    <ListItem>Daisy UI</ListItem>
-                  </UnorderedList>
-                </Center>
-              </GridItem>
-              <GridItem colSpan={1}>
-                <Heading paddingLeft="3" size="md">
-                  Backend
-                </Heading>
-                <Center>
-                  <UnorderedList>
-                    <ListItem>Node.js</ListItem>
-                    <ListItem>Express</ListItem>
-                    <ListItem>MongoDB</ListItem>
-                    <ListItem>Mongoose ODM</ListItem>
-                    <ListItem>REST API Routes</ListItem>
-                  </UnorderedList>
-                </Center>
-              </GridItem>
-              <Center>
-                <Link href="https://new5hark.herokuapp.com/" isExternal>
-                  <Button colorScheme="purple">
-                    Deployment
-                    <ExternalLinkIcon ml={margin} />
-                  </Button>
-                </Link>
-              </Center>
-              <Center>
-                <Link href="https://github.com/sharkby7e/new5hark" isExternal>
-                  <Button colorScheme="blue">
-                    Github <ExternalLinkIcon ml={margin} />
-                  </Button>
-                </Link>
-              </Center>
-            </Grid>
-            <Image src={New5hark} />
-          </GridItem>
+          <ProjectCard
+            title="New5hark"
+            summary="New5hark is a simple day joyfull builder app, where users can create
+            their own activities and keep track of their activities. Users will have
+            the ability to create an account and have access to their own dashboard
+            which will contain their own activities and tracking status. Each
+            Activity is stored onto a MongoDB database and accessed via this React
+            app."
+            frontendList={[
+              'React.js',
+              'Sass',
+              'Chart.js',
+              'Tailwind.css',
+              'Daisy UI'
+            ]}
+            backendList={[
+              'Node.js',
+              'Express.js',
+              'MongoDB',
+              'Mongoose ODM',
+              'REST API Routes'
+            ]}
+            deployment="https://new5hark.herokuapp.com/"
+            github="https://github.com/sharkby7e/new5hark"
+            imageUrl={New5hark}
+          />
           <GridItem
             colSpan={1}
             bg={card}
