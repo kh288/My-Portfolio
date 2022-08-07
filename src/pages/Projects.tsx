@@ -1,19 +1,5 @@
 import React from 'react';
-import {
-  Box,
-  Heading,
-  useColorModeValue,
-  Image,
-  Grid,
-  GridItem,
-  UnorderedList,
-  ListItem,
-  Center,
-  Button,
-  Text,
-  Link
-} from '@chakra-ui/react';
-import { ExternalLinkIcon } from '@chakra-ui/icons';
+import { Box, Heading, useColorModeValue, Grid } from '@chakra-ui/react';
 import New5hark from '../assets/new5hark-todo-list-app.png';
 import SocialBurger from '../assets/social-burger-app.png';
 import SocialMediaAPI from '../assets/social-media-api.png';
@@ -91,86 +77,30 @@ function Projects() {
             github="https://github.com/sharkby7e/new5hark"
             imageUrl={New5hark}
           />
-          <GridItem
-            colSpan={1}
-            bg={card}
-            rounded="md"
-            padding={padding}
-            border="solid 1px"
-            borderColor={borderColor}
-            marginBottom={margin}
-          >
-            <Heading marginBottom={margin} textAlign="center" size="lg">
-              Soical Burger
-            </Heading>
-            <Text>
-              Social Burger is a site in which users interact with each other by
-              sharing their own customized burger. On social burger, our main
-              goal is to connect with people with a fun and interactive
-              experience. In this app users are greeted by the home page with
-              other user&apos;s posted burgers. The user is promted to login
-              before they are able to create their own burger or comment on a
-              burger. If the user does not already have an account, they can
-              register. After that the user my comment on burgers, like them,
-              create their own, and viewe burgers that they have previously made
-              if applicable.
-            </Text>
-            <Grid
-              templateColumns="repeat(2, 1fr)"
-              gap={padding}
-              marginTop={margin}
-            >
-              <GridItem colSpan={1}>
-                <Heading paddingLeft="3" size="md">
-                  Frontend
-                </Heading>
-                <Center>
-                  <UnorderedList>
-                    <ListItem>Handlebars</ListItem>
-                    <ListItem>CSS</ListItem>
-                    <ListItem>Javascript</ListItem>
-                    <ListItem>Bootstrap</ListItem>
-                  </UnorderedList>
-                </Center>
-              </GridItem>
-              <GridItem colSpan={1}>
-                <Heading paddingLeft="3" size="md">
-                  Backend
-                </Heading>
-                <Center>
-                  <UnorderedList>
-                    <ListItem>Node.js</ListItem>
-                    <ListItem>Express</ListItem>
-                    <ListItem>MySQL</ListItem>
-                    <ListItem>Sequelize ODM</ListItem>
-                    <ListItem>REST API Routes</ListItem>
-                  </UnorderedList>
-                </Center>
-              </GridItem>
-              <Center>
-                <Link href="https://social-burger.herokuapp.com" isExternal>
-                  <Button colorScheme="purple">
-                    Deployment
-                    <ExternalLinkIcon ml={margin} />
-                  </Button>
-                </Link>
-              </Center>
-              <Center>
-                <Link href="https://github.com/kh288/Social-Burger" isExternal>
-                  <Button colorScheme="blue">
-                    Github <ExternalLinkIcon ml={margin} />
-                  </Button>
-                </Link>
-              </Center>
-            </Grid>
-            <Image src={SocialBurger} />
-          </GridItem>
-          <GridItem colSpan={1}>
-            <Image src={SocialMediaAPI} />
-          </GridItem>
-          <GridItem>
-            <Image src={StockPortfolioApp} />
-          </GridItem>
+          <ProjectCard
+            title="Soical Burger"
+            summary="Social Burger is a site in which users interact with each other by
+            sharing their own customized burger. On social burger, our main
+            goal is to connect with people with a fun and interactive
+            experience. In this app users are greeted by the home page with
+            other user's posted burgers. The user is promted to login
+            before they are able to create their own burger or comment on a
+            burger. If the user does not already have an account, they can
+            register. After that the user my comment on burgers, like them,
+            create their own, and viewe burgers that they have previously made
+            if applicable."
+            frontendList={['Handlebars.js', 'CSS', 'Javascript', 'Bootstrap']}
+            backendList={[
+              'Node.js',
+              'Express',
+              'MySQL',
+              'Sequelize ODM',
+              'REST API Routes'
+            ]}
+            deployment="ttps://social-burger.herokuapp.com"
+            github="https://github.com/kh288/Social-Burger"
+            imageUrl={SocialBurger}
+          />
         </Grid>
       </Box>
     </Box>
