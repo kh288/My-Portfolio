@@ -25,6 +25,11 @@ function Projects() {
   const card = useColorModeValue('whiteAlpha.600', 'blackAlpha.600');
   const subCard = useColorModeValue('gray.200', 'gray.700');
   const borderColor = useColorModeValue('gray.300', 'gray.600');
+  const colProjectTemplate = [
+    'repeat(1, 1fr)',
+    'repeat(1, 1fr)',
+    'repeat(2, 1fr)'
+  ];
   // 750px width minimum for 2 cols
 
   return (
@@ -58,7 +63,7 @@ function Projects() {
         borderWidth="thin"
         borderColor={borderColor}
       >
-        <Grid templateColumns="repeat(2, 1fr)" gap={margin}>
+        <Grid templateColumns={colProjectTemplate} gap={margin}>
           <GridItem
             colSpan={1}
             bg={card}
@@ -115,7 +120,7 @@ function Projects() {
               <Center>
                 <Link href="https://new5hark.herokuapp.com/" isExternal>
                   <Button colorScheme="purple">
-                    Deployed Link
+                    Deployment
                     <ExternalLinkIcon ml={margin} />
                   </Button>
                 </Link>
@@ -123,7 +128,7 @@ function Projects() {
               <Center>
                 <Link href="https://github.com/sharkby7e/new5hark" isExternal>
                   <Button colorScheme="blue">
-                    Github Repo <ExternalLinkIcon ml={margin} />
+                    Github <ExternalLinkIcon ml={margin} />
                   </Button>
                 </Link>
               </Center>
@@ -189,7 +194,7 @@ function Projects() {
               <Center>
                 <Link href="https://social-burger.herokuapp.com" isExternal>
                   <Button colorScheme="purple">
-                    Deployed Link
+                    Deployment
                     <ExternalLinkIcon ml={margin} />
                   </Button>
                 </Link>
@@ -197,7 +202,7 @@ function Projects() {
               <Center>
                 <Link href="https://github.com/kh288/Social-Burger" isExternal>
                   <Button colorScheme="blue">
-                    Github Repo <ExternalLinkIcon ml={margin} />
+                    Github <ExternalLinkIcon ml={margin} />
                   </Button>
                 </Link>
               </Center>
