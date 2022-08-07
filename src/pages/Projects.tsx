@@ -118,6 +118,22 @@ function Projects() {
             github="https://github.com/kh288/Social-Network-API"
             imageUrl={SocialMediaAPI}
           />
+          <ProjectCard
+            title="Stock Portfolio Analyzer"
+            summary="In this app you get to build a stock portfolio with our potfolio page, this lets you pick as many positions as you want. With this you can then save it into into local storage and navigate to the chart tab to see additional stats and visualize the progress that stock has gained (or lost) over a year's time."
+            frontendList={[
+              'HTML, CSS, Javascript',
+              'Chart.js',
+              'Alpha Advantage API',
+              'Portfolio Optimizer API',
+              'jQuery',
+              'Tailwind.css'
+            ]}
+            backendList={['None']}
+            deployment="https://kh288.github.io/Stock-Portfolio-Analyzer/"
+            github="https://github.com/kh288/Stock-Portfolio-Analyzer"
+            imageUrl={StockPortfolioApp}
+          />
         </Grid>
       </Box>
     </Box>
