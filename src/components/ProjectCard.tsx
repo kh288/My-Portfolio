@@ -46,7 +46,6 @@ function ProjectCard({
       padding={padding}
       border="solid 1px"
       borderColor={borderColor}
-      marginBottom={margin}
     >
       <Heading marginBottom={margin} textAlign="center" size="lg">
         {title}
