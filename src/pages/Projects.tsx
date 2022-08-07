@@ -71,7 +71,8 @@ function Projects() {
               'Express.js',
               'MongoDB',
               'Mongoose ODM',
-              'REST API Routes'
+              'REST API Routes',
+              'Bcrypt'
             ]}
             deployment="https://new5hark.herokuapp.com/"
             github="https://github.com/sharkby7e/new5hark"
@@ -95,11 +96,27 @@ function Projects() {
               'Express',
               'MySQL',
               'Sequelize ODM',
-              'REST API Routes'
+              'REST API Routes',
+              'Bcrypt'
             ]}
             deployment="ttps://social-burger.herokuapp.com"
             github="https://github.com/kh288/Social-Burger"
             imageUrl={SocialBurger}
+          />
+          <ProjectCard
+            title="Social Network API"
+            summary="This is a simple a basic API framework for a social media platform. This backend application is powered by MongoDB and Mongoose ODM via Node.js and Express.js"
+            frontendList={['None']}
+            backendList={[
+              'Node.js',
+              'Express.js',
+              'MongoDB',
+              'Mongoose ODM',
+              'Bcrypt'
+            ]}
+            deployment="https://kevins-social-media-api.herokuapp.com/api/users"
+            github="https://github.com/kh288/Social-Network-API"
+            imageUrl={SocialMediaAPI}
           />
         </Grid>
       </Box>
