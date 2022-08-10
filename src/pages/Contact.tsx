@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Box,
   FormControl,
@@ -5,9 +6,11 @@ import {
   FormLabel,
   Input,
   useColorModeValue,
-  Textarea
+  Textarea,
+  Button,
+  Grid,
+  Text
 } from '@chakra-ui/react';
-import React from 'react';
 
 function Contact() {
   const margin = 3;
@@ -17,28 +20,25 @@ function Contact() {
   const borderColor = useColorModeValue('gray.300', 'gray.600');
 
   return (
-    <Box
+    <Grid
       margin={margin}
       padding={padding}
       gap={padding}
       bg={card}
-      display="grid"
-      justifyContent="center"
       rounded="lg"
       shadow="lg"
     >
-      <Box
+      <Grid
         padding={padding}
         bg={subCard}
         rounded="lg"
         borderStyle="solid"
         borderWidth="thin"
         borderColor={borderColor}
+        justifyContent="center"
       >
-        <Heading display="flex" justifyContent="center" marginBottom={margin}>
-          Contact
-        </Heading>
-      </Box>
+        <Heading>Contact</Heading>
+      </Grid>
       <Box
         padding={padding}
         bg={subCard}
@@ -48,19 +48,37 @@ function Contact() {
         borderColor={borderColor}
       >
         <FormControl borderColor={borderColor} isRequired>
-          <FormLabel>Email</FormLabel>
-          <Input
-            bg={card}
-            marginBottom={margin}
-            placeholder="example@email.com"
-          />
-          <FormLabel>Title</FormLabel>
-          <Input bg={card} marginBottom={margin} placeholder="Title" />
-          <FormLabel>Message</FormLabel>
-          <Textarea bg={card} placeholder="Your Message" />
+          <Grid gap={margin}>
+            <FormLabel>Email</FormLabel>
+            <Input
+              bg={card}
+              placeholder="example@email.com"
+              borderStyle="solid"
+              borderWidth="thin"
+              borderColor={borderColor}
+            />
+            <FormLabel>Title</FormLabel>
+            <Input
+              bg={card}
+              placeholder="Title of your message"
+              borderStyle="solid"
+              borderWidth="thin"
+              borderColor={borderColor}
+            />
+            <FormLabel>Message</FormLabel>
+            <Textarea
+              bg={card}
+              placeholder="Your Message"
+              borderStyle="solid"
+              borderWidth="thin"
+              borderColor={borderColor}
+            />
+            <Button colorScheme="purple">Submit</Button>
+            <Text textAlign="center">* All fields are required to submit</Text>
+          </Grid>
         </FormControl>
       </Box>
-    </Box>
+    </Grid>
   );
 }
 
