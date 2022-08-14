@@ -13,6 +13,7 @@ import {
   Image
 } from '@chakra-ui/react';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
+import { v4 as uuidv4 } from 'uuid';
 
 type props = {
   title: string;
@@ -59,7 +60,7 @@ function ProjectCard({
           <Center>
             <UnorderedList>
               {frontendList.map((frontendListItem) => (
-                <ListItem>{frontendListItem}</ListItem>
+                <ListItem key={uuidv4()}>{frontendListItem}</ListItem>
               ))}
             </UnorderedList>
           </Center>
@@ -71,7 +72,7 @@ function ProjectCard({
           <Center>
             <UnorderedList>
               {backendList.map((backendListItem) => (
-                <ListItem>{backendListItem}</ListItem>
+                <ListItem key={uuidv4()}>{backendListItem}</ListItem>
               ))}
             </UnorderedList>
           </Center>

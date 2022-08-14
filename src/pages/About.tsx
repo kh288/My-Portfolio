@@ -7,7 +7,6 @@ import SubCard from '../components/SubCard';
 
 function About() {
   const margin = 3;
-  const padding = 3;
   const borderColor = useColorModeValue('gray.300', 'gray.600');
 
   const flexCenterAttr = {
