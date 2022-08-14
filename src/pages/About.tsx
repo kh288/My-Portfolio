@@ -1,12 +1,13 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
 import { Box, useColorModeValue, Heading } from '@chakra-ui/react';
+import Card from '../components/Card';
 // import KevinPic from '../assets/kevin-pic.png';
 
 function About() {
   const margin = 3;
   const padding = 3;
-  const cardBackground = useColorModeValue('whiteAlpha.600', 'blackAlpha.600');
+  // const cardBackground = useColorModeValue('whiteAlpha.600', 'blackAlpha.600');
   const subCardBackground = useColorModeValue('gray.200', 'gray.700');
   const borderColor = useColorModeValue('gray.300', 'gray.600');
 
@@ -25,16 +26,7 @@ function About() {
   };
 
   return (
-    <Box
-      margin={margin}
-      padding={padding}
-      gap={padding}
-      bg={cardBackground}
-      display="grid"
-      justifyContent="center"
-      rounded="lg"
-      shadow="lg"
-    >
+    <Card>
       <Box {...subCardAttr}>
         <Heading as="h1" size="3xl" {...flexCenterAttr}>
           About Me
@@ -66,7 +58,7 @@ function About() {
         </p>
       </Box>
       <Box {...subCardAttr}>Test</Box>
-    </Box>
+    </Card>
   );
 }
 
