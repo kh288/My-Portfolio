@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
 import { Box, useColorModeValue, Heading } from '@chakra-ui/react';
 // import KevinPic from '../assets/kevin-pic.png';
@@ -5,42 +6,42 @@ import { Box, useColorModeValue, Heading } from '@chakra-ui/react';
 function About() {
   const margin = 3;
   const padding = 3;
-  const card = useColorModeValue('whiteAlpha.600', 'blackAlpha.600');
-  const subCard = useColorModeValue('gray.200', 'gray.700');
+  const cardBackground = useColorModeValue('whiteAlpha.600', 'blackAlpha.600');
+  const subCardBackground = useColorModeValue('gray.200', 'gray.700');
   const borderColor = useColorModeValue('gray.300', 'gray.600');
+
+  const subCardAttr = {
+    padding,
+    bg: subCardBackground,
+    rounded: 'lg',
+    borderStyle: 'solid',
+    borderWidth: 'thin',
+    borderColor
+  };
+
+  const flexCenterAttr = {
+    display: 'flex',
+    justifyContent: 'center'
+  };
 
   return (
     <Box
       margin={margin}
       padding={padding}
       gap={padding}
-      bg={card}
+      bg={cardBackground}
       display="grid"
       justifyContent="center"
       rounded="lg"
       shadow="lg"
     >
-      <Box
-        padding={padding}
-        bg={subCard}
-        rounded="lg"
-        borderStyle="solid"
-        borderWidth="thin"
-        borderColor={borderColor}
-      >
-        <Heading as="h1" size="2xl" display="flex" justifyContent="center">
+      <Box {...subCardAttr}>
+        <Heading as="h1" size="3xl" {...flexCenterAttr}>
           About Me
         </Heading>
       </Box>
-      <Box
-        padding={padding}
-        bg={subCard}
-        rounded="lg"
-        borderStyle="solid"
-        borderWidth="thin"
-        borderColor={borderColor}
-      >
-        <Heading as="h1" size="2xl" display="flex" justifyContent="center">
+      <Box {...subCardAttr}>
+        <Heading as="h2" size="2xl" {...flexCenterAttr}>
           Front-End Developer
         </Heading>
         <Box
@@ -56,14 +57,7 @@ function About() {
         <p>Recent UC Berkeley Extension Graduate</p>
         <p>Allan Hancock Computer Science</p>
       </Box>
-      <Box
-        padding={padding}
-        bg={subCard}
-        rounded="lg"
-        borderStyle="solid"
-        borderWidth="thin"
-        borderColor={borderColor}
-      >
+      <Box {...subCardAttr}>
         <p>
           Currently working part time at 2U as a Web Instructional Specialist on
           MERN stack. I&apos;m currently pursuing a front-end position. Feel
@@ -71,6 +65,7 @@ function About() {
           work together!
         </p>
       </Box>
+      <Box {...subCardAttr}>Test</Box>
     </Box>
   );
 }
