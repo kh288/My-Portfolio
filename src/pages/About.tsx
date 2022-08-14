@@ -1,13 +1,8 @@
 import React from 'react';
-import {
-  Box,
-  useColorModeValue,
-  // Image,
-  Heading
-} from '@chakra-ui/react';
+import { Box, useColorModeValue, Heading } from '@chakra-ui/react';
 // import KevinPic from '../assets/kevin-pic.png';
 
-function Home() {
+function About() {
   const margin = 3;
   const padding = 3;
   const card = useColorModeValue('whiteAlpha.600', 'blackAlpha.600');
@@ -33,15 +28,33 @@ function Home() {
         borderWidth="thin"
         borderColor={borderColor}
       >
-        <Heading display="flex" justifyContent="center" marginBottom={margin}>
+        <Heading as="h1" size="2xl" display="flex" justifyContent="center">
           About Me
         </Heading>
-        <p>Hello! I&apos;m Kevin Hernandez.</p>
+      </Box>
+      <Box
+        padding={padding}
+        bg={subCard}
+        rounded="lg"
+        borderStyle="solid"
+        borderWidth="thin"
+        borderColor={borderColor}
+      >
+        <Heading as="h1" size="2xl" display="flex" justifyContent="center">
+          Front-End Developer
+        </Heading>
+        <Box
+          margin={margin}
+          borderStyle="solid"
+          borderWidth="thin"
+          borderColor={borderColor}
+        />
+        <Heading as="h3" size="xl" display="flex" justifyContent="center">
+          I&apos;m Kevin Hernandez
+        </Heading>
         <p>Made with React Typescript and Chakra UI.</p>
         <p>Recent UC Berkeley Extension Graduate</p>
         <p>Allan Hancock Computer Science</p>
-        {/* <Image position="absolute"
-        right={space} bottom={space} borderRadius="50%" maxWidth={256} src={KevinPic} /> */}
       </Box>
       <Box
         padding={padding}
@@ -53,13 +66,13 @@ function Home() {
       >
         <p>
           Currently working part time at 2U as a Web Instructional Specialist on
-          MERN stack. I&apos;m currently persuing a frontend position. Feel free
-          to checkout my projects and reach out to me, lets see if we can work
-          together!
+          MERN stack. I&apos;m currently pursuing a front-end position. Feel
+          free to checkout my projects and reach out to me, lets see if we can
+          work together!
         </p>
       </Box>
     </Box>
   );
 }
 
-export default Home;
+export default About;

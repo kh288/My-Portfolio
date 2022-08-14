@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Box, useColorModeValue } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import Navbar from './components/Navbar';
-import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import About from './pages/About';
 
 function App() {
   const blue = useColorModeValue('#3182CE', '#2C5282');
@@ -23,7 +23,7 @@ function App() {
       case 'Contact':
         return <Contact />;
       default:
-        return <Home />;
+        return <About />;
     }
   };
 

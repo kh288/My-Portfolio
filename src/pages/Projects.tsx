@@ -38,7 +38,7 @@ function Projects() {
         borderWidth="thin"
         borderColor={borderColor}
       >
-        <Heading display="flex" justifyContent="center" marginBottom={margin}>
+        <Heading display="flex" justifyContent="center">
           Projects
         </Heading>
       </Box>
@@ -53,8 +53,8 @@ function Projects() {
         <Grid templateColumns={colProjectTemplate} gap={margin}>
           <ProjectCard
             title="New5hark"
-            summary="New5hark is a simple day joyfull builder app, where users can create
-            their own activities and keep track of their activities. Users will have
+            summary="New5hark (pronounced NewShark) is a simple day joyful builder app, where users can create
+            their own activities and keep track of them too. Users will have
             the ability to create an account and have access to their own dashboard
             which will contain their own activities and tracking status. Each
             Activity is stored onto a MongoDB database and accessed via this React
@@ -79,16 +79,16 @@ function Projects() {
             imageUrl={New5hark}
           />
           <ProjectCard
-            title="Soical Burger"
+            title="Social Burger"
             summary="Social Burger is a site in which users interact with each other by
             sharing their own customized burger. On social burger, our main
             goal is to connect with people with a fun and interactive
             experience. In this app users are greeted by the home page with
-            other user's posted burgers. The user is promted to login
+            other user's posted burgers. The user is prompted to login
             before they are able to create their own burger or comment on a
             burger. If the user does not already have an account, they can
             register. After that the user my comment on burgers, like them,
-            create their own, and viewe burgers that they have previously made
+            create their own, and view burgers that they have previously made
             if applicable."
             frontendList={['Handlebars.js', 'CSS', 'Javascript', 'Bootstrap']}
             backendList={[
@@ -120,7 +120,7 @@ function Projects() {
           />
           <ProjectCard
             title="Stock Portfolio Analyzer"
-            summary="In this app you get to build a stock portfolio with our potfolio page, this lets you pick as many positions as you want. With this you can then save it into into local storage and navigate to the chart tab to see additional stats and visualize the progress that stock has gained (or lost) over a year's time."
+            summary="In this app you get to build a stock portfolio with our portfolio page, this lets you pick as many positions as you want. With this you can then save it into into local storage and navigate to the chart tab to see additional stats and visualize the progress that stock has gained (or lost) over a year's time."
             frontendList={[
               'HTML, CSS, Javascript',
               'Chart.js',
