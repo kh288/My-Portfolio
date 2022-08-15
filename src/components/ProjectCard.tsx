@@ -78,7 +78,7 @@ function ProjectCard({
           </Center>
         </GridItem>
         <Center>
-          <Link href={deployment} isExternal>
+          <Link href={deployment} isExternal tabIndex={-1}>
             <Button colorScheme="purple">
               Deployment
               <ExternalLinkIcon ml={margin} />
@@ -86,7 +86,7 @@ function ProjectCard({
           </Link>
         </Center>
         <Center>
-          <Link href={github} isExternal>
+          <Link href={github} isExternal tabIndex={-1}>
             <Button colorScheme="blue">
               Github <ExternalLinkIcon ml={margin} />
             </Button>

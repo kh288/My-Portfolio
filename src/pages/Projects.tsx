@@ -10,7 +10,6 @@ import Card from '../components/Card';
 import SubCard from '../components/SubCard';
 
 function Projects() {
-  const margin = 3;
   const colProjectTemplate = [
     'repeat(1, 1fr)',
     'repeat(1, 1fr)',
@@ -25,7 +24,7 @@ function Projects() {
         </Heading>
       </SubCard>
       <SubCard>
-        <Grid templateColumns={colProjectTemplate} gap={margin}>
+        <Grid templateColumns={colProjectTemplate} gap={3}>
           {ProjectData.map((item) => (
             <ProjectCard
               key={uuidv4()}
