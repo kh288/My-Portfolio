@@ -1,56 +1,54 @@
+/* eslint-disable global-require */
+/* eslint-disable import/no-dynamic-require */
 import React from 'react';
-import { Box, Heading, useColorModeValue, Grid } from '@chakra-ui/react';
-import New5hark from '../assets/new5hark-todo-list-app.png';
-import SocialBurger from '../assets/social-burger-app.png';
-import SocialMediaAPI from '../assets/social-media-api.png';
-import StockPortfolioApp from '../assets/stock-portfolio-analyzer-app.png';
+import { Heading, Grid } from '@chakra-ui/react';
+import { v4 as uuidv4 } from 'uuid';
+import ProjectData from '../data/projects.json';
+
+// import New5hark from '../assets/new5hark-todo-list-app.png';
+// import SocialBurger from '../assets/social-burger-app.png';
+// import SocialMediaAPI from '../assets/social-media-api.png';
+// import StockPortfolioApp from '../assets/stock-portfolio-analyzer-app.png';
+
 import ProjectCard from '../components/ProjectCard';
+import Card from '../components/Card';
+import SubCard from '../components/SubCard';
 
 function Projects() {
   const margin = 3;
-  const padding = 3;
-  const card = useColorModeValue('whiteAlpha.600', 'blackAlpha.600');
-  const subCard = useColorModeValue('gray.200', 'gray.700');
-  const borderColor = useColorModeValue('gray.300', 'gray.600');
   const colProjectTemplate = [
     'repeat(1, 1fr)',
     'repeat(1, 1fr)',
     'repeat(2, 1fr)'
   ];
-  // 750px width minimum for 2 cols
 
   return (
-    <Box
-      margin={margin}
-      padding={padding}
-      gap={padding}
-      bg={card}
-      display="grid"
-      justifyContent="center"
-      rounded="lg"
-      shadow="lg"
-    >
-      <Box
-        padding={padding}
-        bg={subCard}
-        rounded="lg"
-        borderStyle="solid"
-        borderWidth="thin"
-        borderColor={borderColor}
-      >
+    <Card>
+      <SubCard>
         <Heading display="flex" justifyContent="center">
           Projects
         </Heading>
-      </Box>
-      <Box
-        padding={padding}
-        bg={subCard}
-        rounded="lg"
-        borderStyle="solid"
-        borderWidth="thin"
-        borderColor={borderColor}
-      >
-        <Grid templateColumns={colProjectTemplate} gap={margin}>
+      </SubCard>
+      <SubCard>
+        {ProjectData.map((item) => (
+          <Grid
+            key={uuidv4()}
+            templateColumns={colProjectTemplate}
+            gap={margin}
+          >
+            <ProjectCard
+              key={uuidv4()}
+              title={item.title}
+              summary={item.summary}
+              frontendList={item.frontendList}
+              backendList={item.backendList}
+              deployment={item.deployment}
+              github={item.github}
+              imageUrl={require(`../assets/${item.imageUrl}`)}
+            />
+          </Grid>
+        ))}
+        {/* <Grid templateColumns={colProjectTemplate} gap={margin}>
           <ProjectCard
             title="New5hark"
             summary="New5hark (pronounced NewShark) is a simple day joyful builder app, where users can create
@@ -133,10 +131,9 @@ function Projects() {
             deployment="https://kh288.github.io/Stock-Portfolio-Analyzer/"
             github="https://github.com/kh288/Stock-Portfolio-Analyzer"
             imageUrl={StockPortfolioApp}
-          />
-        </Grid>
-      </Box>
-    </Box>
+          /> */}
+      </SubCard>
+    </Card>
   );
 }
 

@@ -1,0 +1,24 @@
+[
+  {
+    "title": "New5hark",
+    "summary": "New5hark (pronounced NewShark) is a simple day joyful builder app, where users can create their own activities and keep track of them too. Users will have the ability to create an account and have access to their own dashboard which will contain their own activities and tracking status. Each activity is stored onto a MongoDB database and accessed via this React app.",
+    "frontendList": [
+      "React.js",
+      "Sass",
+      "Chart.js",
+      "Tailwind.css",
+      "Daisy UI"
+    ],
+    "backendList": [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose ODM",
+      "REST API Routes",
+      "Bcrypt"
+    ],
+    "deployment": "https://new5hark.herokuapp.com/",
+    "github": "https://github.com/sharkby7e/new5hark",
+    "imageUrl": "new5hark-todo-list-app.png"
+  }
+]

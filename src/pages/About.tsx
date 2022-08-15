@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
 import { Box, useColorModeValue, Heading } from '@chakra-ui/react';
 import Card from '../components/Card';
@@ -9,20 +8,15 @@ function About() {
   const margin = 3;
   const borderColor = useColorModeValue('gray.300', 'gray.600');
 
-  const flexCenterAttr = {
-    display: 'flex',
-    justifyContent: 'center'
-  };
-
   return (
     <Card>
       <SubCard>
-        <Heading as="h1" size="3xl" {...flexCenterAttr}>
+        <Heading as="h1" size="3xl" display="flex" justifyContent="center">
           About Me
         </Heading>
       </SubCard>
       <SubCard>
-        <Heading as="h2" size="2xl" {...flexCenterAttr}>
+        <Heading as="h2" size="2xl" display="flex" justifyContent="center">
           Front-End Developer
         </Heading>
         <Box
