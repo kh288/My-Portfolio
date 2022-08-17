@@ -3,16 +3,12 @@ import React from 'react';
 import { Box, useColorModeValue } from '@chakra-ui/react';
 
 function Card({ children }: any) {
-  const margin = 3;
-  const padding = 3;
-  const cardBackground = useColorModeValue('whiteAlpha.600', 'blackAlpha.600');
-
   return (
     <Box
-      margin={margin}
-      padding={padding}
-      gap={padding}
-      bg={cardBackground}
+      margin={3}
+      padding={3}
+      gap={3}
+      bg={useColorModeValue('whiteAlpha.600', 'blackAlpha.600')}
       display="grid"
       justifyContent="center"
       rounded="lg"
