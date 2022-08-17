@@ -5,10 +5,12 @@ import {
   Heading,
   Grid,
   Center,
-  GridItem
+  GridItem,
+  Image
 } from '@chakra-ui/react';
 import Card from '../components/Card';
 import SubCard from '../components/SubCard';
+import KevinPic from '../assets/kevin-pic.png';
 
 function About() {
   const margin = 3;
@@ -32,6 +34,9 @@ function About() {
           <Heading as="h2" size="xl" display="flex" justifyContent="center">
             I&apos;m Kevin Hernandez
           </Heading>
+          <Center>
+            <Image margin={6} borderRadius="100%" width={256} src={KevinPic} />
+          </Center>
           <p>Made with React Typescript and Chakra UI.</p>
           <p>Recent UC Berkeley Extension Graduate</p>
           <p>Allan Hancock Computer Science</p>
