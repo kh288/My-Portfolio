@@ -1,8 +1,11 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react';
 import { Box, useColorModeValue } from '@chakra-ui/react';
 
-function Card({ children }: any) {
+type Props = {
+  children: React.ReactNode | React.ReactNode[];
+};
+
+function Card({ children }: Props) {
   return (
     <Box
       margin={3}

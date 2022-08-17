@@ -20,65 +20,69 @@ function Contact() {
   const borderColor = useColorModeValue('gray.300', 'gray.600');
 
   return (
-    <Grid
-      margin={margin}
-      padding={padding}
-      gap={padding}
-      bg={card}
-      rounded="lg"
-      shadow="lg"
-    >
+    <Box maxWidth={1024} margin="auto">
       <Grid
+        margin={margin}
         padding={padding}
-        bg={subCard}
+        gap={padding}
+        bg={card}
         rounded="lg"
-        borderStyle="solid"
-        borderWidth="thin"
-        borderColor={borderColor}
-        justifyContent="center"
+        shadow="lg"
       >
-        <Heading>Contact</Heading>
+        <Grid
+          padding={padding}
+          bg={subCard}
+          rounded="lg"
+          borderStyle="solid"
+          borderWidth="thin"
+          borderColor={borderColor}
+          justifyContent="center"
+        >
+          <Heading>Contact</Heading>
+        </Grid>
+        <Box
+          padding={padding}
+          bg={subCard}
+          rounded="lg"
+          borderStyle="solid"
+          borderWidth="thin"
+          borderColor={borderColor}
+        >
+          <FormControl borderColor={borderColor} isRequired>
+            <Grid gap={margin}>
+              <FormLabel>Email</FormLabel>
+              <Input
+                bg={card}
+                placeholder="example@email.com"
+                borderStyle="solid"
+                borderWidth="thin"
+                borderColor={borderColor}
+              />
+              <FormLabel>Title</FormLabel>
+              <Input
+                bg={card}
+                placeholder="Title of your message"
+                borderStyle="solid"
+                borderWidth="thin"
+                borderColor={borderColor}
+              />
+              <FormLabel>Message</FormLabel>
+              <Textarea
+                bg={card}
+                placeholder="Your Message"
+                borderStyle="solid"
+                borderWidth="thin"
+                borderColor={borderColor}
+              />
+              <Button colorScheme="purple">Submit</Button>
+              <Text textAlign="center">
+                * All fields are required to submit
+              </Text>
+            </Grid>
+          </FormControl>
+        </Box>
       </Grid>
-      <Box
-        padding={padding}
-        bg={subCard}
-        rounded="lg"
-        borderStyle="solid"
-        borderWidth="thin"
-        borderColor={borderColor}
-      >
-        <FormControl borderColor={borderColor} isRequired>
-          <Grid gap={margin}>
-            <FormLabel>Email</FormLabel>
-            <Input
-              bg={card}
-              placeholder="example@email.com"
-              borderStyle="solid"
-              borderWidth="thin"
-              borderColor={borderColor}
-            />
-            <FormLabel>Title</FormLabel>
-            <Input
-              bg={card}
-              placeholder="Title of your message"
-              borderStyle="solid"
-              borderWidth="thin"
-              borderColor={borderColor}
-            />
-            <FormLabel>Message</FormLabel>
-            <Textarea
-              bg={card}
-              placeholder="Your Message"
-              borderStyle="solid"
-              borderWidth="thin"
-              borderColor={borderColor}
-            />
-            <Button colorScheme="purple">Submit</Button>
-            <Text textAlign="center">* All fields are required to submit</Text>
-          </Grid>
-        </FormControl>
-      </Box>
-    </Grid>
+    </Box>
   );
 }
 
