@@ -17,7 +17,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 type props = {
   title: string;
-  summary: string;
+  summary?: string;
   frontendList: Array<string>;
   backendList: Array<string>;
   deployment: string;
@@ -25,7 +25,7 @@ type props = {
   imageUrl: string;
 };
 
-function ProjectCard({
+const ProjectCard = ({
   title,
   summary,
   frontendList,
@@ -33,7 +33,7 @@ function ProjectCard({
   deployment,
   github,
   imageUrl
-}: props) {
+}: props) => {
   const margin = 3;
   const padding = 3;
   const card = useColorModeValue('whiteAlpha.600', 'blackAlpha.600');
@@ -96,6 +96,10 @@ function ProjectCard({
       <Image src={imageUrl} />
     </GridItem>
   );
-}
+};
+
+ProjectCard.defaultProps = {
+  summary: ''
+};
 
 export default ProjectCard;

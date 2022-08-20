@@ -1,3 +1,5 @@
+/* eslint-disable global-require */
+/* eslint-disable import/no-dynamic-require */
 import React from 'react';
 import {
   Box,
@@ -8,15 +10,24 @@ import {
   GridItem,
   Image
 } from '@chakra-ui/react';
+import { v4 as uuidv4 } from 'uuid';
 import Card from '../components/Card';
 import SubCard from '../components/SubCard';
 import KevinPic from '../assets/kevin-pic.png';
 
+import ProjectData from '../data/projects.json';
+import ProjectCard from '../components/ProjectCard';
+
 function About() {
   const spacing = 3;
   const borderColor = useColorModeValue('gray.300', 'gray.600');
-  const gridTemplate = ['repeat(1, 1fr)', 'repeat(1, 1fr)', 'repeat(2, 1fr)'];
+  const gridTemplate = ['repeat(1, 1fr)', 'repeat(2, 1fr)', 'repeat(3, 1fr)'];
   const card = useColorModeValue('whiteAlpha.600', 'blackAlpha.600');
+  const colProjectTemplate = [
+    'repeat(1, 1fr)',
+    'repeat(1, 1fr)',
+    'repeat(2, 1fr)'
+  ];
 
   return (
     <Box maxWidth={1024} margin="auto">
@@ -71,13 +82,33 @@ function About() {
             >
               <Center>
                 <ul>
+                  <li>Git</li>
+                  <li>Github</li>
+                  <li>Heroku</li>
+                  <li>Eslint</li>
+                  <li>Insomnia</li>
+                  <li>TDD</li>
+                </ul>
+              </Center>
+            </GridItem>
+            <GridItem
+              colSpan={1}
+              bg={card}
+              rounded="md"
+              padding={spacing}
+              border="solid 1px"
+              borderColor={borderColor}
+            >
+              <Center>
+                <ul>
                   <li>React</li>
                   <li>CSS</li>
                   <li>Javascript</li>
                   <li>Typescript</li>
+                  <li>jQuery</li>
                   <li>Tailwind</li>
                   <li>Chakra</li>
-                  <li>Stripe</li>
+                  <li>Bootstrap</li>
                 </ul>
               </Center>
             </GridItem>
@@ -101,6 +132,24 @@ function About() {
                 </ul>
               </Center>
             </GridItem>
+          </Grid>
+          <Grid
+            marginTop={spacing}
+            templateColumns={colProjectTemplate}
+            gap={3}
+          >
+            {ProjectData.map((item) => (
+              <ProjectCard
+                key={uuidv4()}
+                title={item.title}
+                summary={item.summary}
+                frontendList={item.frontendList}
+                backendList={item.backendList}
+                deployment={item.deployment}
+                github={item.github}
+                imageUrl={require(`../assets/${item.imageUrl}`)}
+              />
+            ))}
           </Grid>
         </SubCard>
       </Card>

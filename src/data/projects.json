@@ -1,7 +1,7 @@
 [
   {
     "title": "New5hark",
-    "summary": "New5hark (pronounced NewShark) is a simple day joyful builder app, where users can create their own activities and keep track of them too. Users will have the ability to create an account and have access to their own dashboard which will contain their own activities and tracking status. Each activity is stored onto a MongoDB database and accessed via this React app.",
+    "summary": "A fullstack app backed by MongoDB and a frontend powered by React. In this app a user can create an account, and create a day todo list of activities to do for the day.",
     "frontendList": [
       "React.js",
       "Sass",
@@ -23,7 +23,7 @@
   },
   {
     "title": "Social Burger",
-    "summary": "Social Burger is a site in which users interact with each other by sharing their own customized burger. On social burger, our main goal is to connect with people with a fun and interactive experience. In this app users are greeted by the home page with other user's posted burgers. The user is prompted to login before they are able to create their own burger or comment on a burger. If the user does not already have an account, they can register. After that the user my comment on burgers, like them, create their own, and view burgers that they have previously made if applicable.",
+    "summary": "A fullstack app backed by MySQL and serverside rendering with handlebars.js for storing a user's burgers they can create and share",
     "frontendList": ["Handlebars.js", "CSS", "Javascript", "Bootstrap"],
     "backendList": [
       "Node.js",
@@ -39,7 +39,7 @@
   },
   {
     "title": "Social Network API",
-    "summary": "This is a simple a basic API framework for a social media platform. This backend application is powered by MongoDB and Mongoose ODM via Node.js and Express.js",
+    "summary": "A backend with MongoDB that can CRUD users, friends, and are all assigned to REST API routes",
     "frontendList": ["None"],
     "backendList": [
       "Node.js",
@@ -54,7 +54,7 @@
   },
   {
     "title": "Stock Portfolio Analyzer",
-    "summary": "In this app you get to build a stock portfolio with our portfolio page, this lets you pick as many positions as you want. With this you can then save it into into local storage and navigate to the chart tab to see additional stats and visualize the progress that stock has gained (or lost) over a year's time.",
+    "summary": "A jQuery Frontend site to visualize stock data from a third party API using Chart.js",
     "frontendList": [
       "HTML, CSS, Javascript",
       "Chart.js",
