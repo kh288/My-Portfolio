@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
-import About from './pages/About';
+import About from './pages/Home';
 
 function App() {
   const blue = useColorModeValue('#3182CE', '#2C5282');
