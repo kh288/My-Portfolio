@@ -33,7 +33,7 @@
       "REST API Routes",
       "Bcrypt"
     ],
-    "deployment": "ttps://social-burger.herokuapp.com",
+    "deployment": "https://social-burger.herokuapp.com",
     "github": "https://github.com/kh288/Social-Burger",
     "imageUrl": "social-burger-app.png"
   },
