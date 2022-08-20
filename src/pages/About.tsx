@@ -38,6 +38,7 @@ function About() {
           </Heading>
           <Box
             margin={spacing}
+            bg={borderColor}
             borderStyle="solid"
             borderWidth="thin"
             borderColor={borderColor}
