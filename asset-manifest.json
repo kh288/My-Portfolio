@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.c5496d64.css",
-    "main.js": "/my-portfolio/static/js/main.3bc395c2.js",
+    "main.css": "/my-portfolio/static/css/main.31d6cfe0.css",
+    "main.js": "/my-portfolio/static/js/main.1eab526f.js",
+    "static/media/kevin-pic.png": "/my-portfolio/static/media/kevin-pic.755f7d5ce35b95626100.png",
     "static/media/social-burger-app.png": "/my-portfolio/static/media/social-burger-app.62d35edcf31ece29e3ca.png",
     "static/media/stock-portfolio-analyzer-app.png": "/my-portfolio/static/media/stock-portfolio-analyzer-app.13c3f7ee4be14ab2aa88.png",
     "static/media/social-media-api.png": "/my-portfolio/static/media/social-media-api.f2799184597eec58a959.png",
     "static/media/new5hark-todo-list-app.png": "/my-portfolio/static/media/new5hark-todo-list-app.cf775945f550954a1490.png",
+    "static/media/kevins-e-commerce-backend.png": "/my-portfolio/static/media/kevins-e-commerce-backend.45c857a8ec76a55a5ee7.png",
     "index.html": "/my-portfolio/index.html",
-    "main.c5496d64.css.map": "/my-portfolio/static/css/main.c5496d64.css.map",
-    "main.3bc395c2.js.map": "/my-portfolio/static/js/main.3bc395c2.js.map"
+    "main.1eab526f.js.map": "/my-portfolio/static/js/main.1eab526f.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5496d64.css",
-    "static/js/main.3bc395c2.js"
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.1eab526f.js"
   ]
 }
