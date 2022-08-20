@@ -13,7 +13,7 @@ import SubCard from '../components/SubCard';
 import KevinPic from '../assets/kevin-pic.png';
 
 function About() {
-  const margin = 3;
+  const spacing = 3;
   const borderColor = useColorModeValue('gray.300', 'gray.600');
   const gridTemplate = ['repeat(1, 1fr)', 'repeat(1, 1fr)', 'repeat(2, 1fr)'];
   const card = useColorModeValue('whiteAlpha.600', 'blackAlpha.600');
@@ -26,7 +26,7 @@ function About() {
             Front-End Developer
           </Heading>
           <Box
-            margin={margin}
+            margin={spacing}
             borderStyle="solid"
             borderWidth="thin"
             borderColor={borderColor}
@@ -35,31 +35,42 @@ function About() {
             I&apos;m Kevin Hernandez
           </Heading>
           <Center>
-            <Image margin={6} borderRadius="100%" width={256} src={KevinPic} />
+            <Image
+              margin={spacing}
+              borderRadius="100%"
+              width={256}
+              src={KevinPic}
+            />
           </Center>
-          <p>Made with React Typescript and Chakra UI.</p>
-          <p>Recent UC Berkeley Extension Graduate</p>
-          <p>Allan Hancock Computer Science</p>
-          <p>
-            Currently working part time at 2U as a Web Instructional Specialist
-            on MERN stack. I&apos;m currently pursuing a front-end position.
-            Feel free to checkout my projects and reach out to me, lets see if
-            we can work together!
-          </p>
-        </SubCard>
-        <SubCard>
+          <Box
+            bg={card}
+            rounded="md"
+            padding={spacing}
+            marginY={spacing}
+            border="solid 1px"
+            borderColor={borderColor}
+          >
+            <p>Made with React Typescript and Chakra UI.</p>
+            <p>Recent UC Berkeley Extension Graduate</p>
+            <p>Allan Hancock Computer Science</p>
+            <p>
+              Currently working part time at 2U as a Web Instructional
+              Specialist on MERN stack. I&apos;m currently pursuing a front-end
+              position. Feel free to checkout my projects and reach out to me,
+              lets see if we can work together!
+            </p>
+          </Box>
           <Grid templateColumns={gridTemplate} gap={3}>
             <GridItem
               colSpan={1}
               bg={card}
               rounded="md"
-              padding={3}
+              padding={spacing}
               border="solid 1px"
               borderColor={borderColor}
             >
               <Center>
                 <ul>
-                  <Heading>Frontend</Heading>
                   <li>React</li>
                   <li>CSS</li>
                   <li>Javascript</li>
@@ -74,17 +85,18 @@ function About() {
               colSpan={1}
               bg={card}
               rounded="md"
-              padding={3}
+              padding={spacing}
               border="solid 1px"
               borderColor={borderColor}
             >
               <Center>
                 <ul>
-                  <Heading>Backend</Heading>
                   <li>Node</li>
                   <li>Express</li>
                   <li>MySQL</li>
+                  <li>Sequalize ODM</li>
                   <li>MongoDB</li>
+                  <li>Mongoose ODM</li>
                   <li>Bcrypt</li>
                 </ul>
               </Center>
