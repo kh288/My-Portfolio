@@ -10,16 +10,21 @@ import {
   GridItem,
   Image,
   Text,
-  Button
+  Button,
+  Flex,
+  IconButton,
+  Icon
 } from '@chakra-ui/react';
 import { v4 as uuidv4 } from 'uuid';
+// Component Imports
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import Card from '../components/Card';
 import SubCard from '../components/SubCard';
+import ProjectCard from '../components/ProjectCard';
+// Data Imports
 import KevinPic from '../assets/kevin-pic.png';
 import KevinResume from '../assets/kevin-hernandez-resume.pdf';
-
 import ProjectData from '../data/projects.json';
-import ProjectCard from '../components/ProjectCard';
 
 function About() {
   const spacing = 3;
@@ -191,11 +196,35 @@ function About() {
             ))}
             {/* END OF GENERATE PROJECTS */}
           </Grid>
-          <Box margin={spacing}>
-            <Center>
-              <p>Made with React Typescript and Chakra UI.</p>
-            </Center>
-          </Box>
+          <Flex justifyContent="center" gap={spacing} margin={spacing}>
+            <a target="_blank" href="https://github.com/kh288" rel="noreferrer">
+              <IconButton
+                size="lg"
+                fontSize="4xl"
+                variant="ghost"
+                color="current"
+                icon={<Icon as={FaGithub} />}
+                aria-label="Home Button"
+              />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/kevin-hernandez-5a8243167/"
+              rel="noreferrer"
+            >
+              <IconButton
+                size="lg"
+                fontSize="4xl"
+                variant="ghost"
+                color="current"
+                icon={<Icon as={FaLinkedin} />}
+                aria-label="Home Button"
+              />
+            </a>
+          </Flex>
+          <Center>
+            <p>Made with React Typescript and Chakra UI.</p>
+          </Center>
         </SubCard>
       </Card>
     </Box>
