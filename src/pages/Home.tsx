@@ -9,12 +9,14 @@ import {
   Center,
   GridItem,
   Image,
-  Text
+  Text,
+  Button
 } from '@chakra-ui/react';
 import { v4 as uuidv4 } from 'uuid';
 import Card from '../components/Card';
 import SubCard from '../components/SubCard';
 import KevinPic from '../assets/kevin-pic.png';
+import KevinResume from '../assets/kevin-hernandez-resume.pdf';
 
 import ProjectData from '../data/projects.json';
 import ProjectCard from '../components/ProjectCard';
@@ -78,16 +80,33 @@ function About() {
             marginY={spacing}
             border="solid 1px"
             borderColor={borderColor}
+            gap={spacing}
           >
-            <Center>
-              <p>Made with React Typescript and Chakra UI.</p>
-            </Center>
-            <Center>
-              <p>UC Berkeley Extension Full-stack Development</p>
-            </Center>
-            <Center>
-              <p>Allan Hancock Computer Science</p>
-            </Center>
+            <Box margin={spacing}>
+              <Center>
+                <p>UC Berkeley Extension Full-stack Development</p>
+              </Center>
+              <Center>
+                <p>Allan Hancock Computer Science</p>
+              </Center>
+            </Box>
+
+            <Grid templateColumns="repeat(2, 1fr)" gap={spacing}>
+              <GridItem colSpan={1}>
+                <Center>
+                  <a target="_blank" href={KevinResume} rel="noreferrer">
+                    <Button colorScheme="purple">Resume</Button>
+                  </a>
+                </Center>
+              </GridItem>
+              <GridItem colSpan={1}>
+                <Center>
+                  <a target="_blank" href={KevinResume} rel="noreferrer">
+                    <Button colorScheme="blue">Contact</Button>
+                  </a>
+                </Center>
+              </GridItem>
+            </Grid>
           </Box>
 
           <Grid templateColumns={gridTemplate} gap={3}>
@@ -157,6 +176,7 @@ function About() {
             templateColumns={colProjectTemplate}
             gap={3}
           >
+            {/* START OF GENERATE PROJECTS */}
             {ProjectData.map((item) => (
               <ProjectCard
                 key={uuidv4()}
@@ -169,7 +189,13 @@ function About() {
                 imageUrl={require(`../assets/${item.imageUrl}`)}
               />
             ))}
+            {/* END OF GENERATE PROJECTS */}
           </Grid>
+          <Box margin={spacing}>
+            <Center>
+              <p>Made with React Typescript and Chakra UI.</p>
+            </Center>
+          </Box>
         </SubCard>
       </Card>
     </Box>
