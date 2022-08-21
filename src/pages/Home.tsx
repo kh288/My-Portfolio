@@ -17,7 +17,7 @@ import {
 } from '@chakra-ui/react';
 import { v4 as uuidv4 } from 'uuid';
 // Component Imports
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import Card from '../components/Card';
 import SubCard from '../components/SubCard';
 import ProjectCard from '../components/ProjectCard';
@@ -218,6 +218,20 @@ function About() {
                 variant="ghost"
                 color="current"
                 icon={<Icon as={FaLinkedin} />}
+                aria-label="Home Button"
+              />
+            </a>
+            <a
+              target="_blank"
+              href="mailto:kevin.hernandez288@gmail.com"
+              rel="noreferrer"
+            >
+              <IconButton
+                size="lg"
+                fontSize="4xl"
+                variant="ghost"
+                color="current"
+                icon={<Icon as={FaEnvelope} />}
                 aria-label="Home Button"
               />
             </a>
