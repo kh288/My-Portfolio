@@ -47,7 +47,7 @@ function About() {
             borderColor={borderColor}
           />
           <Heading as="h2" size="xl" display="flex" justifyContent="center">
-            I&apos;m Kevin Hernandez
+            Kevin Hernandez
           </Heading>
           <Center>
             <Image
