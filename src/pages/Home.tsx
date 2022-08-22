@@ -22,7 +22,7 @@ import Card from '../components/Card';
 import SubCard from '../components/SubCard';
 import ProjectCard from '../components/ProjectCard';
 // Data Imports
-import KevinPic from '../assets/kevin-pic.png';
+import KevinPic from '../assets/kevin-headshot-square.jpg';
 import KevinResume from '../assets/kevin-hernandez-resume.pdf';
 import ProjectData from '../data/projects.json';
 
@@ -41,9 +41,11 @@ function About() {
     <Box maxWidth={1024} margin="auto">
       <Card>
         <SubCard>
-          <Heading as="h1" size="2xl" display="flex" justifyContent="center">
-            Front-End Developer
-          </Heading>
+          <Center>
+            <Heading as="h1" size="2xl">
+              Front-End Developer
+            </Heading>
+          </Center>
           <Box
             margin={spacing}
             bg={borderColor}
@@ -51,9 +53,11 @@ function About() {
             borderWidth="thin"
             borderColor={borderColor}
           />
-          <Heading as="h2" size="xl" display="flex" justifyContent="center">
-            Kevin Hernandez
-          </Heading>
+          <Center>
+            <Heading as="h2" size="xl">
+              Kevin Hernandez
+            </Heading>
+          </Center>
           <Center>
             <Image
               margin={spacing}
