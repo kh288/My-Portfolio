@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.31d6cfe0.css",
-    "main.js": "/my-portfolio/static/js/main.5a24917c.js",
-    "static/media/kevin-pic.png": "/my-portfolio/static/media/kevin-pic.755f7d5ce35b95626100.png",
+    "main.js": "/my-portfolio/static/js/main.059e2292.js",
     "static/media/social-burger-app.png": "/my-portfolio/static/media/social-burger-app.62d35edcf31ece29e3ca.png",
     "static/media/stock-portfolio-analyzer-app.png": "/my-portfolio/static/media/stock-portfolio-analyzer-app.13c3f7ee4be14ab2aa88.png",
     "static/media/social-media-api.png": "/my-portfolio/static/media/social-media-api.f2799184597eec58a959.png",
     "static/media/new5hark-todo-list-app.png": "/my-portfolio/static/media/new5hark-todo-list-app.cf775945f550954a1490.png",
     "static/media/kevins-e-commerce-backend.png": "/my-portfolio/static/media/kevins-e-commerce-backend.45c857a8ec76a55a5ee7.png",
+    "static/media/kevin-headshot-square.jpg": "/my-portfolio/static/media/kevin-headshot-square.3068493ed5f888be2d19.jpg",
     "static/media/kevin-hernandez-resume.pdf": "/my-portfolio/static/media/kevin-hernandez-resume.518b3693b46f4b06d76b.pdf",
     "index.html": "/my-portfolio/index.html",
-    "main.5a24917c.js.map": "/my-portfolio/static/js/main.5a24917c.js.map"
+    "main.059e2292.js.map": "/my-portfolio/static/js/main.059e2292.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.5a24917c.js"
+    "static/js/main.059e2292.js"
   ]
 }
