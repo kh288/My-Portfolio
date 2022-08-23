@@ -57,25 +57,21 @@ const ProjectCard = ({
           <Heading paddingLeft="3" size="md">
             Frontend
           </Heading>
-          <Center>
-            <UnorderedList>
-              {frontendList.map((frontendListItem) => (
-                <ListItem key={uuidv4()}>{frontendListItem}</ListItem>
-              ))}
-            </UnorderedList>
-          </Center>
+          <UnorderedList>
+            {frontendList.map((frontendListItem) => (
+              <ListItem key={uuidv4()}>{frontendListItem}</ListItem>
+            ))}
+          </UnorderedList>
         </GridItem>
         <GridItem colSpan={1}>
           <Heading paddingLeft="3" size="md">
             Backend
           </Heading>
-          <Center>
-            <UnorderedList>
-              {backendList.map((backendListItem) => (
-                <ListItem key={uuidv4()}>{backendListItem}</ListItem>
-              ))}
-            </UnorderedList>
-          </Center>
+          <UnorderedList>
+            {backendList.map((backendListItem) => (
+              <ListItem key={uuidv4()}>{backendListItem}</ListItem>
+            ))}
+          </UnorderedList>
         </GridItem>
         <Center>
           <Link href={deployment} isExternal tabIndex={-1}>

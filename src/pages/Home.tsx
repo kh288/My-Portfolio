@@ -43,17 +43,10 @@ function About() {
       <Card>
         <SubCard>
           <Center>
-            <Heading as="h1" size="2xl">
+            <Heading marginBottom={spacing} as="h1" size="2xl">
               Front-End Developer
             </Heading>
           </Center>
-          <Box
-            margin={spacing}
-            bg={borderColor}
-            borderStyle="solid"
-            borderWidth="thin"
-            borderColor={borderColor}
-          />
           <Center>
             <Heading as="h2" size="xl">
               Kevin Hernandez
@@ -111,11 +104,9 @@ function About() {
               </GridItem>
               <GridItem colSpan={1}>
                 <Center>
-                  {/* <a target="_blank" href={KevinResume} rel="noreferrer"> */}
                   <Link to="contact">
                     <Button colorScheme="blue">Contact</Button>
                   </Link>
-                  {/* </a> */}
                 </Center>
               </GridItem>
             </Grid>

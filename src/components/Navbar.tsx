@@ -17,8 +17,7 @@ type pageProps = {
 
 function Navbar({ currentPage, handleCurrentPage }: pageProps) {
   const bg = useColorModeValue('whiteAlpha.600', 'blackAlpha.600');
-  const margin = 3;
-  const padding = 3;
+  const spacing = 1;
 
   return (
     <Box
@@ -26,11 +25,11 @@ function Navbar({ currentPage, handleCurrentPage }: pageProps) {
       display="flex"
       justifyContent="space-between"
       marginX="auto"
-      padding={padding}
-      marginBottom={margin}
+      padding={2}
+      marginBottom={spacing}
       shadow="lg"
     >
-      <Link to="/">
+      <Link to="/my-portfolio/">
         <IconButton
           size="md"
           fontSize="lg"
@@ -43,14 +42,14 @@ function Navbar({ currentPage, handleCurrentPage }: pageProps) {
           <Button>About</Button>
         </IconButton>
       </Link>
-      <Box display="flex" gap={margin}>
-        <Link to="/">
+      <Box display="flex" gap={spacing}>
+        <Link to="/my-portfolio/">
           <Button variant="ghost">About</Button>
         </Link>
-        <Link to="projects">
+        <Link to="/my-portfolio/projects">
           <Button variant="ghost">Projects</Button>
         </Link>
-        <Link to="contact">
+        <Link to="/my-portfolio/contact">
           <Button variant="ghost">Contact</Button>
         </Link>
       </Box>

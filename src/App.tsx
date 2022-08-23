@@ -44,9 +44,9 @@ function App() {
           />
           <motion.div animate={{ y: 0 }} initial={{ y: -50 }}>
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="projects" element={<Projects />} />
-              <Route path="contact" element={<Contact />} />
+              <Route path="/my-portfolio/" element={<Home />} />
+              <Route path="/my-portfolio/projects" element={<Projects />} />
+              <Route path="/my-portfolio/contact" element={<Contact />} />
             </Routes>
             {/* <Box>{renderPage()}</Box> */}
           </motion.div>
