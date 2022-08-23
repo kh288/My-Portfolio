@@ -1,19 +1,24 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.31d6cfe0.css",
-    "main.js": "/my-portfolio/static/js/main.059e2292.js",
+    "main.js": "/my-portfolio/static/js/main.cc8094e5.js",
     "static/media/social-burger-app.png": "/my-portfolio/static/media/social-burger-app.62d35edcf31ece29e3ca.png",
     "static/media/stock-portfolio-analyzer-app.png": "/my-portfolio/static/media/stock-portfolio-analyzer-app.13c3f7ee4be14ab2aa88.png",
     "static/media/social-media-api.png": "/my-portfolio/static/media/social-media-api.f2799184597eec58a959.png",
     "static/media/new5hark-todo-list-app.png": "/my-portfolio/static/media/new5hark-todo-list-app.cf775945f550954a1490.png",
     "static/media/kevins-e-commerce-backend.png": "/my-portfolio/static/media/kevins-e-commerce-backend.45c857a8ec76a55a5ee7.png",
-    "static/media/kevin-headshot-square.jpg": "/my-portfolio/static/media/kevin-headshot-square.3068493ed5f888be2d19.jpg",
+    "static/media/kevin-headshot-square.jpg": "/my-portfolio/static/media/kevin-headshot-square.b4a261acf0b73ff40e61.jpg",
     "static/media/kevin-hernandez-resume.pdf": "/my-portfolio/static/media/kevin-hernandez-resume.518b3693b46f4b06d76b.pdf",
+    "static/media/stock-portfolio-analyzer-app.webp": "/my-portfolio/static/media/stock-portfolio-analyzer-app.d4c8fce6fe725840e1c3.webp",
+    "static/media/social-burger-app.webp": "/my-portfolio/static/media/social-burger-app.8a61ba60d9af4708281b.webp",
+    "static/media/new5hark-todo-list-app.webp": "/my-portfolio/static/media/new5hark-todo-list-app.ed7ae439f23320811139.webp",
+    "static/media/social-media-api.webp": "/my-portfolio/static/media/social-media-api.a9181848b21f5b0dbea7.webp",
+    "static/media/kevin-headshot-square.webp": "/my-portfolio/static/media/kevin-headshot-square.b201a86906666efa7f35.webp",
     "index.html": "/my-portfolio/index.html",
-    "main.059e2292.js.map": "/my-portfolio/static/js/main.059e2292.js.map"
+    "main.cc8094e5.js.map": "/my-portfolio/static/js/main.cc8094e5.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.059e2292.js"
+    "static/js/main.cc8094e5.js"
   ]
 }
