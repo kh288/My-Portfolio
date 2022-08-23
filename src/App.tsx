@@ -1,4 +1,10 @@
 import React, { useState } from 'react';
+import {
+  BrowserRouter,
+  BrowserRouter as Router,
+  Route,
+  Routes
+} from 'react-router-dom';
 import { Box, useColorModeValue } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import Navbar from './components/Navbar';
@@ -29,17 +35,24 @@ function App() {
   const handleCurrentPage = (page: string) => setCurrentPage(page);
 
   return (
-    <Box bgGradient={blueToPurple}>
-      <Box bgGradient={gradientL} height="512px">
-        <Navbar
-          currentPage={currentPage}
-          handleCurrentPage={handleCurrentPage}
-        />
-        <motion.div animate={{ y: 0 }} initial={{ y: -50 }}>
-          <Box>{renderPage()}</Box>
-        </motion.div>
+    <BrowserRouter>
+      <Box bgGradient={blueToPurple}>
+        <Box bgGradient={gradientL} height="512px">
+          <Navbar
+            currentPage={currentPage}
+            handleCurrentPage={handleCurrentPage}
+          />
+          <motion.div animate={{ y: 0 }} initial={{ y: -50 }}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="projects" element={<Projects />} />
+              <Route path="contact" element={<Contact />} />
+            </Routes>
+            {/* <Box>{renderPage()}</Box> */}
+          </motion.div>
+        </Box>
       </Box>
-    </Box>
+    </BrowserRouter>
   );
 }
 

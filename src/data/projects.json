@@ -19,7 +19,8 @@
     ],
     "deployment": "https://new5hark.herokuapp.com/",
     "github": "https://github.com/sharkby7e/new5hark",
-    "imageUrl": "new5hark-todo-list-app.png"
+    "imageUrl": "new5hark-todo-list-app.webp",
+    "imageAlt": "image of new shark app preview"
   },
   {
     "title": "Social Burger",
@@ -35,7 +36,8 @@
     ],
     "deployment": "https://social-burger.herokuapp.com",
     "github": "https://github.com/kh288/Social-Burger",
-    "imageUrl": "social-burger-app.png"
+    "imageUrl": "social-burger-app.webp",
+    "imageAlt": "image of social burger app preview"
   },
   {
     "title": "Social Network API",
@@ -50,7 +52,8 @@
     ],
     "deployment": "https://kevins-social-media-api.herokuapp.com/api/users",
     "github": "https://github.com/kh288/Social-Network-API",
-    "imageUrl": "kevins-e-commerce-backend.png"
+    "imageUrl": "social-media-api.webp",
+    "imageAlt": "image of social media api preview"
   },
   {
     "title": "Stock Portfolio Analyzer",
@@ -66,6 +69,7 @@
     "backendList": ["None"],
     "deployment": "https://kh288.github.io/Stock-Portfolio-Analyzer/",
     "github": "https://github.com/kh288/Stock-Portfolio-Analyzer",
-    "imageUrl": "stock-portfolio-analyzer-app.png"
+    "imageUrl": "stock-portfolio-analyzer-app.webp",
+    "imageAlt": "image of stock portfolio analyzer preview"
   }
 ]

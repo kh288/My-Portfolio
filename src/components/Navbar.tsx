@@ -7,6 +7,7 @@ import {
   IconButton
 } from '@chakra-ui/react';
 import { FaHome } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import ColorModeSwitcher from './ColorModeSwitcher';
 
 type pageProps = {
@@ -29,34 +30,29 @@ function Navbar({ currentPage, handleCurrentPage }: pageProps) {
       marginBottom={margin}
       shadow="lg"
     >
-      <IconButton
-        size="md"
-        fontSize="lg"
-        variant="ghost"
-        color="current"
-        icon={<Icon as={FaHome} />}
-        onClick={() => handleCurrentPage('Home')}
-        aria-label="Home Button"
-      />
-      <Box display="flex" gap={margin}>
-        <Button
-          colorScheme={currentPage === 'Home' ? 'purple' : 'gray'}
+      <Link to="/">
+        <IconButton
+          size="md"
+          fontSize="lg"
+          variant="ghost"
+          color="current"
+          icon={<Icon as={FaHome} />}
           onClick={() => handleCurrentPage('Home')}
+          aria-label="Home Button"
         >
-          About
-        </Button>
-        <Button
-          colorScheme={currentPage === 'Projects' ? 'purple' : 'gray'}
-          onClick={() => handleCurrentPage('Projects')}
-        >
-          Projects
-        </Button>
-        <Button
-          colorScheme={currentPage === 'Contact' ? 'purple' : 'gray'}
-          onClick={() => handleCurrentPage('Contact')}
-        >
-          Contact
-        </Button>
+          <Button>About</Button>
+        </IconButton>
+      </Link>
+      <Box display="flex" gap={margin}>
+        <Link to="/">
+          <Button variant="ghost">About</Button>
+        </Link>
+        <Link to="projects">
+          <Button variant="ghost">Projects</Button>
+        </Link>
+        <Link to="contact">
+          <Button variant="ghost">Contact</Button>
+        </Link>
       </Box>
       <ColorModeSwitcher />
     </Box>

@@ -15,6 +15,7 @@ import {
   IconButton,
   Icon
 } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 // Component Imports
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
@@ -22,7 +23,7 @@ import Card from '../components/Card';
 import SubCard from '../components/SubCard';
 import ProjectCard from '../components/ProjectCard';
 // Data Imports
-import KevinPic from '../assets/kevin-headshot-square.jpg';
+import KevinPic from '../assets/kevin-headshot-square.webp';
 import KevinResume from '../assets/kevin-hernandez-resume.pdf';
 import ProjectData from '../data/projects.json';
 
@@ -110,9 +111,11 @@ function About() {
               </GridItem>
               <GridItem colSpan={1}>
                 <Center>
-                  <a target="_blank" href={KevinResume} rel="noreferrer">
+                  {/* <a target="_blank" href={KevinResume} rel="noreferrer"> */}
+                  <Link to="contact">
                     <Button colorScheme="blue">Contact</Button>
-                  </a>
+                  </Link>
+                  {/* </a> */}
                 </Center>
               </GridItem>
             </Grid>
