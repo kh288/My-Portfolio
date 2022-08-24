@@ -12,7 +12,7 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 
-function App() {
+export default function App() {
   const blue = useColorModeValue('#3182CE', '#2C5282');
   const purple = useColorModeValue('#805AD5', '#553C9A');
   const blueToPurple = `linear(to-l, ${blue}, ${purple} 60%)`;
@@ -55,5 +55,3 @@ function App() {
     </BrowserRouter>
   );
 }
-
-export default App;

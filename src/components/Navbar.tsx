@@ -15,7 +15,7 @@ type pageProps = {
   handleCurrentPage: (input: string) => void;
 };
 
-function Navbar({ currentPage, handleCurrentPage }: pageProps) {
+export default function Navbar({ currentPage, handleCurrentPage }: pageProps) {
   const bg = useColorModeValue('whiteAlpha.600', 'blackAlpha.600');
   const spacing = 1;
 
@@ -57,5 +57,3 @@ function Navbar({ currentPage, handleCurrentPage }: pageProps) {
     </Box>
   );
 }
-
-export default Navbar;

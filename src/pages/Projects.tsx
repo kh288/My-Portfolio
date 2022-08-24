@@ -9,7 +9,7 @@ import ProjectCard from '../components/ProjectCard';
 import Card from '../components/Card';
 import SubCard from '../components/SubCard';
 
-function Projects() {
+export default function Projects() {
   const colProjectTemplate = [
     'repeat(1, 1fr)',
     'repeat(1, 1fr)',
@@ -44,5 +44,3 @@ function Projects() {
     </Box>
   );
 }
-
-export default Projects;

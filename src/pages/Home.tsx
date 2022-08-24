@@ -27,7 +27,7 @@ import KevinPic from '../assets/kevin-headshot-square.webp';
 import KevinResume from '../assets/kevin-hernandez-resume.pdf';
 import ProjectData from '../data/projects.json';
 
-function About() {
+export default function About() {
   const spacing = 3;
   const borderColor = useColorModeValue('gray.300', 'gray.600');
   const gridTemplate = ['repeat(1, 1fr)', 'repeat(2, 1fr)', 'repeat(3, 1fr)'];
@@ -243,5 +243,3 @@ function About() {
     </Box>
   );
 }
-
-export default About;

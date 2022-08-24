@@ -5,7 +5,7 @@ type Props = {
   children: React.ReactNode | React.ReactNode[];
 };
 
-function Card({ children }: Props) {
+export default function Card({ children }: Props) {
   return (
     <Box
       padding={3}
@@ -19,5 +19,3 @@ function Card({ children }: Props) {
     </Box>
   );
 }
-
-export default Card;

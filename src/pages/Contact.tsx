@@ -12,7 +12,7 @@ import {
   Text
 } from '@chakra-ui/react';
 
-function Contact() {
+export default function Contact() {
   const margin = 3;
   const padding = 3;
   const card = useColorModeValue('whiteAlpha.600', 'blackAlpha.600');
@@ -97,5 +97,3 @@ function Contact() {
     </Box>
   );
 }
-
-export default Contact;

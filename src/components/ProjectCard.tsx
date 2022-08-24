@@ -25,7 +25,7 @@ type props = {
   imageUrl: string;
 };
 
-const ProjectCard = ({
+export default function ProjectCard({
   title,
   summary,
   frontendList,
@@ -33,7 +33,7 @@ const ProjectCard = ({
   deployment,
   github,
   imageUrl
-}: props) => {
+}: props) {
   const margin = 3;
   const padding = 3;
   const card = useColorModeValue('whiteAlpha.600', 'blackAlpha.600');
@@ -92,10 +92,8 @@ const ProjectCard = ({
       <Image src={imageUrl} />
     </GridItem>
   );
-};
+}
 
 ProjectCard.defaultProps = {
   summary: ''
 };
-
-export default ProjectCard;
