@@ -113,7 +113,7 @@ export default function About() {
           <Grid templateColumns={gridTemplate} gap={3}>
             {/* START OF GENERATE SKILLS */}
             {SkillData.map((skills) => (
-              <Skills skillList={skills} />
+              <Skills key={uuidv4()} skillList={skills} />
             ))}
             {/* END OF GENERATE SKILLS */}
           </Grid>

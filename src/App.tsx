@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { Box, useColorModeValue } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import Navbar from './components/Navbar';
@@ -19,23 +19,20 @@ export default function App() {
   const handleCurrentPage = (page: string) => setCurrentPage(page);
 
   return (
-    <BrowserRouter>
-      <Box bgGradient={blueToPurple}>
-        <Box bgGradient={gradientL} height="512px">
-          <Navbar
-            currentPage={currentPage}
-            handleCurrentPage={handleCurrentPage}
-          />
-          <motion.div animate={{ y: 0 }} initial={{ y: -50 }}>
-            <Routes>
-              <Route path="/my-portfolio/" element={<Home />} />
-              <Route path="/my-portfolio/projects" element={<Projects />} />
-              <Route path="/my-portfolio/contact" element={<Contact />} />
-            </Routes>
-            {/* <Box>{renderPage()}</Box> */}
-          </motion.div>
-        </Box>
+    <Box bgGradient={blueToPurple}>
+      <Box bgGradient={gradientL} height="512px">
+        <Navbar
+          currentPage={currentPage}
+          handleCurrentPage={handleCurrentPage}
+        />
+        <motion.div animate={{ y: 0 }} initial={{ y: -50 }}>
+          <Routes>
+            <Route path="/my-portfolio/" element={<Home />} />
+            <Route path="/my-portfolio/projects" element={<Projects />} />
+            <Route path="/my-portfolio/contact" element={<Contact />} />
+          </Routes>
+        </motion.div>
       </Box>
-    </BrowserRouter>
+    </Box>
   );
 }
