@@ -15,7 +15,7 @@ import {
 import { ExternalLinkIcon } from '@chakra-ui/icons';
 import { v4 as uuidv4 } from 'uuid';
 
-type props = {
+type Props = {
   title: string;
   summary?: string;
   frontendList: Array<string>;
@@ -33,7 +33,7 @@ export default function ProjectCard({
   deployment,
   github,
   imageUrl
-}: props) {
+}: Props) {
   const margin = 3;
   const padding = 3;
   const card = useColorModeValue('whiteAlpha.600', 'blackAlpha.600');

@@ -25,6 +25,7 @@ import ProjectCard from '../components/ProjectCard';
 // Data Imports
 import KevinPic from '../assets/kevin-headshot-square.webp';
 import KevinResume from '../assets/kevin-hernandez-resume.pdf';
+import SkillData from '../data/skills.json';
 import ProjectData from '../data/projects.json';
 
 export default function About() {

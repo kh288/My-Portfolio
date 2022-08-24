@@ -1,0 +1,33 @@
+[
+  {
+    "generic:": [
+      "Git",
+      "Github",
+      "Heroku",
+      "EsLint",
+      "Insomnia",
+      "TDD",
+      "Agile"
+    ],
+    "frontend": [
+      "React",
+      "CSS",
+      "Javascript",
+      "Typescript",
+      "jQuery",
+      "Tailwind",
+      "Chakra",
+      "Bootstrap"
+    ],
+    "backend": [
+      "Node",
+      "Express",
+      "MySQL",
+      "Sequalize ODM",
+      "MongoDB",
+      "Mongoose ODM",
+      "GraphQL",
+      "Bcrypt"
+    ]
+  }
+]
