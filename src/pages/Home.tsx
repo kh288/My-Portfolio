@@ -10,15 +10,11 @@ import {
   GridItem,
   Image,
   Text,
-  Button,
-  Flex,
-  IconButton,
-  Icon
+  Button
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 // Component Imports
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import Card from '../components/Card';
 import SubCard from '../components/SubCard';
 import ProjectCard from '../components/ProjectCard';
@@ -28,6 +24,7 @@ import KevinResume from '../assets/kevin-hernandez-resume.pdf';
 import SkillData from '../data/skills.json';
 import ProjectData from '../data/projects.json';
 import Skills from '../components/Skills';
+import SocialLinks from '../components/SocialLinks';
 
 export default function About() {
   const spacing = 3;
@@ -140,46 +137,7 @@ export default function About() {
             ))}
             {/* END OF GENERATE PROJECTS */}
           </Grid>
-          <Flex justifyContent="center" gap={spacing} margin={spacing}>
-            <a target="_blank" href="https://github.com/kh288" rel="noreferrer">
-              <IconButton
-                size="lg"
-                fontSize="4xl"
-                variant="ghost"
-                color="current"
-                icon={<Icon as={FaGithub} />}
-                aria-label="Home Button"
-              />
-            </a>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/kevin-hernandez-5a8243167/"
-              rel="noreferrer"
-            >
-              <IconButton
-                size="lg"
-                fontSize="4xl"
-                variant="ghost"
-                color="current"
-                icon={<Icon as={FaLinkedin} />}
-                aria-label="Home Button"
-              />
-            </a>
-            <a
-              target="_blank"
-              href="mailto:kevin.hernandez288@gmail.com"
-              rel="noreferrer"
-            >
-              <IconButton
-                size="lg"
-                fontSize="4xl"
-                variant="ghost"
-                color="current"
-                icon={<Icon as={FaEnvelope} />}
-                aria-label="Home Button"
-              />
-            </a>
-          </Flex>
+          <SocialLinks />
           <Center>
             <p>Made with React Typescript and Chakra UI.</p>
           </Center>

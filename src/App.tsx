@@ -1,10 +1,5 @@
 import React, { useState } from 'react';
-import {
-  BrowserRouter,
-  BrowserRouter as Router,
-  Route,
-  Routes
-} from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Box, useColorModeValue } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import Navbar from './components/Navbar';
@@ -20,17 +15,6 @@ export default function App() {
   const gradientL = `linear(to-b, #00000000, ${bgColor})`;
 
   const [currentPage, setCurrentPage] = useState('About');
-
-  const renderPage = () => {
-    switch (currentPage) {
-      case 'Projects':
-        return <Projects />;
-      case 'Contact':
-        return <Contact />;
-      default:
-        return <Home />;
-    }
-  };
 
   const handleCurrentPage = (page: string) => setCurrentPage(page);
 
