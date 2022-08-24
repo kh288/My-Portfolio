@@ -27,6 +27,7 @@ import KevinPic from '../assets/kevin-headshot-square.webp';
 import KevinResume from '../assets/kevin-hernandez-resume.pdf';
 import SkillData from '../data/skills.json';
 import ProjectData from '../data/projects.json';
+import Skills from '../components/Skills';
 
 export default function About() {
   const spacing = 3;
@@ -112,69 +113,12 @@ export default function About() {
               </GridItem>
             </Grid>
           </Box>
-
           <Grid templateColumns={gridTemplate} gap={3}>
-            <GridItem
-              colSpan={1}
-              bg={card}
-              rounded="md"
-              padding={spacing}
-              border="solid 1px"
-              borderColor={borderColor}
-            >
-              <Center>
-                <ul>
-                  <li>Git</li>
-                  <li>Github</li>
-                  <li>Heroku</li>
-                  <li>Eslint</li>
-                  <li>Insomnia</li>
-                  <li>TDD</li>
-                </ul>
-              </Center>
-            </GridItem>
-            <GridItem
-              colSpan={1}
-              bg={card}
-              rounded="md"
-              padding={spacing}
-              border="solid 1px"
-              borderColor={borderColor}
-            >
-              <Center>
-                <ul>
-                  <li>React</li>
-                  <li>CSS</li>
-                  <li>Javascript</li>
-                  <li>Typescript</li>
-                  <li>jQuery</li>
-                  <li>Tailwind</li>
-                  <li>Chakra</li>
-                  <li>Bootstrap</li>
-                </ul>
-              </Center>
-            </GridItem>
-            <GridItem
-              colSpan={1}
-              bg={card}
-              rounded="md"
-              padding={spacing}
-              border="solid 1px"
-              borderColor={borderColor}
-            >
-              <Center>
-                <ul>
-                  <li>Node</li>
-                  <li>Express</li>
-                  <li>MySQL</li>
-                  <li>Sequalize ODM</li>
-                  <li>MongoDB</li>
-                  <li>Mongoose ODM</li>
-                  <li>GraphQL</li>
-                  <li>Bcrypt</li>
-                </ul>
-              </Center>
-            </GridItem>
+            {/* START OF GENERATE SKILLS */}
+            {SkillData.map((skills) => (
+              <Skills skillList={skills} />
+            ))}
+            {/* END OF GENERATE SKILLS */}
           </Grid>
           <Grid
             marginTop={spacing}

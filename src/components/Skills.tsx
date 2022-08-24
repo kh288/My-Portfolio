@@ -21,7 +21,7 @@ export default function Skills({ skillList }: Props) {
     >
       <Center>
         <ul>
-          {skillList.map((skill, i) => (
+          {skillList.map((skill) => (
             <li key={uuidv4()}>{skill}</li>
           ))}
         </ul>
