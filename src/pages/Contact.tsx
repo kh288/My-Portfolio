@@ -1,17 +1,20 @@
 import React from 'react';
 import {
   Box,
-  FormControl,
+  // FormControl,
   Heading,
-  FormLabel,
-  Input,
+  // FormLabel,
+  // Input,
   useColorModeValue,
-  Textarea,
-  Button,
+  // Textarea,
+  // Button,
   Grid,
-  Text
+  Text,
+  Center
 } from '@chakra-ui/react';
 import SocialLinks from '../components/SocialLinks';
+// import SubCard from '../components/SubCard';
+import Card from '../components/Card';
 
 export default function Contact() {
   const margin = 3;
@@ -61,7 +64,18 @@ export default function Contact() {
           borderWidth="thin"
           borderColor={borderColor}
         >
-          <FormControl borderColor={borderColor} isRequired>
+          <Center>
+            <Text>
+              If you&apos;d like to get in contact with me, ideally reach out
+              through email or linkedin.
+            </Text>
+          </Center>
+          <Card>
+            <Center>
+              <Text>kevin.hernandez288@gmail.com</Text>
+            </Center>
+          </Card>
+          {/* <FormControl borderColor={borderColor} isRequired>
             <Grid gap={margin}>
               <FormLabel>Email</FormLabel>
               <Input
@@ -92,7 +106,7 @@ export default function Contact() {
                 * All fields are required to submit
               </Text>
             </Grid>
-          </FormControl>
+          </FormControl> */}
           <SocialLinks />
         </Box>
       </Grid>

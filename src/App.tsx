@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Route, Routes } from 'react-router-dom';
+// import { Route, Routes } from 'react-router-dom';
 import { Box, useColorModeValue } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import Navbar from './components/Navbar';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
+// import Projects from './pages/Projects';
+// import Contact from './pages/Contact';
 import Home from './pages/Home';
 
 export default function App() {
@@ -26,11 +26,7 @@ export default function App() {
           handleCurrentPage={handleCurrentPage}
         />
         <motion.div animate={{ y: 0 }} initial={{ y: -50 }}>
-          <Routes>
-            <Route path="/my-portfolio/" element={<Home />} />
-            <Route path="/my-portfolio/projects" element={<Projects />} />
-            <Route path="/my-portfolio/contact" element={<Contact />} />
-          </Routes>
+          <Home />
         </motion.div>
       </Box>
     </Box>

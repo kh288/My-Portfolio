@@ -12,19 +12,18 @@ import {
   Text,
   Button
 } from '@chakra-ui/react';
-import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 // Component Imports
 import Card from '../components/Card';
 import SubCard from '../components/SubCard';
 import ProjectCard from '../components/ProjectCard';
+import Skills from '../components/Skills';
+import SocialLinks from '../components/SocialLinks';
 // Data Imports
 import KevinPic from '../assets/kevin-headshot-square.webp';
 import KevinResume from '../assets/kevin-hernandez-resume.pdf';
 import SkillData from '../data/skills.json';
 import ProjectData from '../data/projects.json';
-import Skills from '../components/Skills';
-import SocialLinks from '../components/SocialLinks';
 
 export default function About() {
   const spacing = 3;
@@ -55,11 +54,12 @@ export default function About() {
             <Image
               margin={spacing}
               borderRadius="100%"
-              width={256}
+              maxWidth={256}
+              maxHeight={256}
               src={KevinPic}
             />
           </Center>
-          <Box padding={spacing} marginY={spacing}>
+          <Box id="about" padding={spacing} marginY={spacing}>
             <Center>
               <Text>
                 I&apos;m a recent UC Berkeley Extension Coding Bootcamp graduate
@@ -103,9 +103,11 @@ export default function About() {
               </GridItem>
               <GridItem colSpan={1}>
                 <Center>
-                  <Link to="contact">
+                  {/* <Link to="#contact"> */}
+                  <a href="#contact">
                     <Button colorScheme="blue">Contact</Button>
-                  </Link>
+                  </a>
+                  {/* </Link> */}
                 </Center>
               </GridItem>
             </Grid>
@@ -118,6 +120,7 @@ export default function About() {
             {/* END OF GENERATE SKILLS */}
           </Grid>
           <Grid
+            id="projects"
             marginTop={spacing}
             templateColumns={colProjectTemplate}
             gap={3}
@@ -137,7 +140,12 @@ export default function About() {
             ))}
             {/* END OF GENERATE PROJECTS */}
           </Grid>
-          <SocialLinks />
+          <div id="contact">
+            <Center margin={spacing}>
+              <Text>Lets get in touch!</Text>
+            </Center>
+            <SocialLinks />
+          </div>
           <Center>
             <p>Made with React Typescript and Chakra UI.</p>
           </Center>
