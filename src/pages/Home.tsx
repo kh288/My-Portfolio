@@ -169,6 +169,7 @@ function About() {
                   <li>Sequalize ODM</li>
                   <li>MongoDB</li>
                   <li>Mongoose ODM</li>
+                  <li>GraphQL</li>
                   <li>Bcrypt</li>
                 </ul>
               </Center>

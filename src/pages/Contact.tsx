@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Box,
   FormControl,
@@ -18,6 +18,18 @@ function Contact() {
   const card = useColorModeValue('whiteAlpha.600', 'blackAlpha.600');
   const subCard = useColorModeValue('gray.200', 'gray.700');
   const borderColor = useColorModeValue('gray.300', 'gray.600');
+
+  // const [formInfo, setFormInfo] = useState({
+  //   email: '',
+  //   title: '',
+  //   message: ''
+  // });
+
+  // const handleInputChange = function (e: any) {
+  //   setFormInfo({ ...formInfo, [e.target.name]: e.target.value });
+  // };
+
+  // const handleFormSubmit = function (e: any) {};
 
   return (
     <Box maxWidth={1024} margin="auto">
