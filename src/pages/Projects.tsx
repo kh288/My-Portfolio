@@ -8,6 +8,7 @@ import ProjectData from '../data/projects.json';
 import ProjectCard from '../components/ProjectCard';
 import Card from '../components/Card';
 import SubCard from '../components/SubCard';
+import SocialLinks from '../components/SocialLinks';
 
 export default function Projects() {
   const colProjectTemplate = [
@@ -39,6 +40,7 @@ export default function Projects() {
               />
             ))}
           </Grid>
+          <SocialLinks />
         </SubCard>
       </Card>
     </Box>

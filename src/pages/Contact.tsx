@@ -11,6 +11,7 @@ import {
   Grid,
   Text
 } from '@chakra-ui/react';
+import SocialLinks from '../components/SocialLinks';
 
 export default function Contact() {
   const margin = 3;
@@ -92,6 +93,7 @@ export default function Contact() {
               </Text>
             </Grid>
           </FormControl>
+          <SocialLinks />
         </Box>
       </Grid>
     </Box>
