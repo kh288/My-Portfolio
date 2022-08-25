@@ -45,13 +45,28 @@ export default function ProjectCard({
       bg={card}
       rounded="md"
       padding={spacing}
+      gap={spacing}
       border="solid 1px"
       borderColor={borderColor}
     >
-      <Heading marginBottom={spacing} textAlign="center" size="lg">
+      <Heading textAlign="center" size="lg">
         {title}
       </Heading>
+      <Image marginY={spacing} src={imageUrl} shadow="md" />
       <Text>{summary}</Text>
+      <Box marginTop={spacing} display="flex" justifyContent="space-between">
+        <Link href={deployment} isExternal tabIndex={-1}>
+          <Button colorScheme="purple">
+            Deployment
+            <ExternalLinkIcon ml={spacing} />
+          </Button>
+        </Link>
+        <Link href={github} isExternal tabIndex={-1}>
+          <Button colorScheme="blue">
+            Github <ExternalLinkIcon ml={spacing} />
+          </Button>
+        </Link>
+      </Box>
       <Grid
         templateColumns="repeat(2, 1fr)"
         gap={spacing}
@@ -76,22 +91,6 @@ export default function ProjectCard({
           </UnorderedList>
         </GridItem>
       </Grid>
-
-      <Box marginTop={spacing} display="flex" justifyContent="space-between">
-        <Link href={deployment} isExternal tabIndex={-1}>
-          <Button colorScheme="purple">
-            Deployment
-            <ExternalLinkIcon ml={spacing} />
-          </Button>
-        </Link>
-        <Link href={github} isExternal tabIndex={-1}>
-          <Button colorScheme="blue">
-            Github <ExternalLinkIcon ml={spacing} />
-          </Button>
-        </Link>
-      </Box>
-
-      <Image marginTop={spacing} src={imageUrl} shadow="md" />
     </GridItem>
   );
 }
