@@ -35,7 +35,7 @@ export default function ProjectCard({
   github,
   imageUrl
 }: Props) {
-  const spacing = 6;
+  const spacing = 3;
   const card = useColorModeValue('whiteAlpha.600', 'blackAlpha.600');
   const borderColor = useColorModeValue('gray.300', 'gray.600');
 
