@@ -1,5 +1,5 @@
-import { Flex, IconButton, Icon } from '@chakra-ui/react';
 import React from 'react';
+import { Flex, IconButton, Icon } from '@chakra-ui/react';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 export default function SocialLinks() {

@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
-// import { Route, Routes } from 'react-router-dom';
 import { Box, useColorModeValue } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import Navbar from './components/Navbar';
-// import Projects from './pages/Projects';
-// import Contact from './pages/Contact';
 import Home from './pages/Home';
 
 export default function App() {
@@ -14,17 +11,10 @@ export default function App() {
   const bgColor = useColorModeValue('white', 'gray.800');
   const gradientL = `linear(to-b, #00000000, ${bgColor})`;
 
-  const [currentPage, setCurrentPage] = useState('About');
-
-  const handleCurrentPage = (page: string) => setCurrentPage(page);
-
   return (
     <Box bgGradient={blueToPurple}>
       <Box bgGradient={gradientL} height="512px">
-        <Navbar
-          currentPage={currentPage}
-          handleCurrentPage={handleCurrentPage}
-        />
+        <Navbar />
         <motion.div animate={{ y: 0 }} initial={{ y: -50 }}>
           <Home />
         </motion.div>

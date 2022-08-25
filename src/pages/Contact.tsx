@@ -1,13 +1,8 @@
 import React from 'react';
 import {
   Box,
-  // FormControl,
   Heading,
-  // FormLabel,
-  // Input,
   useColorModeValue,
-  // Textarea,
-  // Button,
   Grid,
   Text,
   Center
@@ -22,18 +17,6 @@ export default function Contact() {
   const card = useColorModeValue('whiteAlpha.600', 'blackAlpha.600');
   const subCard = useColorModeValue('gray.200', 'gray.700');
   const borderColor = useColorModeValue('gray.300', 'gray.600');
-
-  // const [formInfo, setFormInfo] = useState({
-  //   email: '',
-  //   title: '',
-  //   message: ''
-  // });
-
-  // const handleInputChange = function (e: any) {
-  //   setFormInfo({ ...formInfo, [e.target.name]: e.target.value });
-  // };
-
-  // const handleFormSubmit = function (e: any) {};
 
   return (
     <Box maxWidth={1024} margin="auto">
@@ -75,38 +58,6 @@ export default function Contact() {
               <Text>kevin.hernandez288@gmail.com</Text>
             </Center>
           </Card>
-          {/* <FormControl borderColor={borderColor} isRequired>
-            <Grid gap={margin}>
-              <FormLabel>Email</FormLabel>
-              <Input
-                bg={card}
-                placeholder="example@email.com"
-                borderStyle="solid"
-                borderWidth="thin"
-                borderColor={borderColor}
-              />
-              <FormLabel>Title</FormLabel>
-              <Input
-                bg={card}
-                placeholder="Title of your message"
-                borderStyle="solid"
-                borderWidth="thin"
-                borderColor={borderColor}
-              />
-              <FormLabel>Message</FormLabel>
-              <Textarea
-                bg={card}
-                placeholder="Your Message"
-                borderStyle="solid"
-                borderWidth="thin"
-                borderColor={borderColor}
-              />
-              <Button colorScheme="purple">Submit</Button>
-              <Text textAlign="center">
-                * All fields are required to submit
-              </Text>
-            </Grid>
-          </FormControl> */}
           <SocialLinks />
         </Box>
       </Grid>

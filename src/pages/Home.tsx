@@ -82,7 +82,6 @@ export default function About() {
           <Box
             bg={card}
             rounded="md"
-            // padding={spacing}
             marginY={spacing}
             border="solid 1px"
             borderColor={borderColor}
@@ -111,11 +110,9 @@ export default function About() {
               </GridItem>
               <GridItem colSpan={1}>
                 <Center>
-                  {/* <Link to="#contact"> */}
                   <a href="#contact">
                     <Button colorScheme="blue">Contact</Button>
                   </a>
-                  {/* </Link> */}
                 </Center>
               </GridItem>
             </Grid>
