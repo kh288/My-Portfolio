@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.31d6cfe0.css",
-    "main.js": "/my-portfolio/static/js/main.c9842b7e.js",
-    "static/media/social-burger-app.png": "/my-portfolio/static/media/social-burger-app.62d35edcf31ece29e3ca.png",
-    "static/media/stock-portfolio-analyzer-app.png": "/my-portfolio/static/media/stock-portfolio-analyzer-app.13c3f7ee4be14ab2aa88.png",
-    "static/media/social-media-api.png": "/my-portfolio/static/media/social-media-api.f2799184597eec58a959.png",
-    "static/media/new5hark-todo-list-app.png": "/my-portfolio/static/media/new5hark-todo-list-app.cf775945f550954a1490.png",
+    "main.js": "/my-portfolio/static/js/main.f1ad6c73.js",
+    "static/media/social-burger-app.png": "/my-portfolio/static/media/social-burger-app.82529a6b510bf1e6cb0f.png",
     "static/media/kevins-e-commerce-backend.png": "/my-portfolio/static/media/kevins-e-commerce-backend.45c857a8ec76a55a5ee7.png",
+    "static/media/stock-portfolio-analyzer-app.png": "/my-portfolio/static/media/stock-portfolio-analyzer-app.a216906b94782331754e.png",
     "static/media/kevin-headshot-square.jpg": "/my-portfolio/static/media/kevin-headshot-square.b4a261acf0b73ff40e61.jpg",
+    "static/media/social-media-api.png": "/my-portfolio/static/media/social-media-api.65f8de947417a3c4cba1.png",
+    "static/media/new5hark-todo-list-app.png": "/my-portfolio/static/media/new5hark-todo-list-app.54aa4cd7729b7e7921df.png",
     "static/media/kevin-hernandez-resume.pdf": "/my-portfolio/static/media/kevin-hernandez-resume.518b3693b46f4b06d76b.pdf",
     "static/media/stock-portfolio-analyzer-app.webp": "/my-portfolio/static/media/stock-portfolio-analyzer-app.d4c8fce6fe725840e1c3.webp",
     "static/media/social-burger-app.webp": "/my-portfolio/static/media/social-burger-app.8a61ba60d9af4708281b.webp",
@@ -15,10 +15,10 @@
     "static/media/social-media-api.webp": "/my-portfolio/static/media/social-media-api.a9181848b21f5b0dbea7.webp",
     "static/media/kevin-headshot-square.webp": "/my-portfolio/static/media/kevin-headshot-square.b201a86906666efa7f35.webp",
     "index.html": "/my-portfolio/index.html",
-    "main.c9842b7e.js.map": "/my-portfolio/static/js/main.c9842b7e.js.map"
+    "main.f1ad6c73.js.map": "/my-portfolio/static/js/main.f1ad6c73.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.c9842b7e.js"
+    "static/js/main.f1ad6c73.js"
   ]
 }
