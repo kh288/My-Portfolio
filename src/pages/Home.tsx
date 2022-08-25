@@ -20,7 +20,7 @@ import ProjectCard from '../components/ProjectCard';
 import Skills from '../components/Skills';
 import SocialLinks from '../components/SocialLinks';
 // Data Imports
-import KevinPic from '../assets/kevin-headshot-square.webp';
+import KevinPic from '../assets/kevin-headshot-square.jpg';
 import KevinResume from '../assets/kevin-hernandez-resume.pdf';
 import SkillData from '../data/skills.json';
 import ProjectData from '../data/projects.json';
@@ -62,16 +62,20 @@ export default function About() {
           <Box id="about" padding={spacing} marginY={spacing}>
             <Center>
               <Text>
-                I&apos;m a recent UC Berkeley Extension Coding Bootcamp graduate
-                looking to get into a junior frontend position.
+                Recent UC Berkeley Coding Bootcamp graduate seeking a front-end
+                position.
               </Text>
             </Center>
             <Center>
               <Text>
-                I&apos;m passionate about creating good products and adding
-                great value to teams. Currently working part time at 2U as a Web
-                Instructional Specialist on MERN stack. I&apos;m eager to learn
-                and would love to have an opportunity to work with you!
+                Passionate about creating good products and adding great value
+                to teams.
+              </Text>
+            </Center>
+            <Center>
+              <Text>
+                Currently working at 2U Inc. as a Web Instructional Specialist
+                on MERN stack.
               </Text>
             </Center>
           </Box>

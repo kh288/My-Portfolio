@@ -10,7 +10,8 @@ import {
   UnorderedList,
   useColorModeValue,
   Text,
-  Image
+  Image,
+  Box
 } from '@chakra-ui/react';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
 import { v4 as uuidv4 } from 'uuid';
@@ -34,8 +35,7 @@ export default function ProjectCard({
   github,
   imageUrl
 }: Props) {
-  const margin = 3;
-  const padding = 3;
+  const spacing = 6;
   const card = useColorModeValue('whiteAlpha.600', 'blackAlpha.600');
   const borderColor = useColorModeValue('gray.300', 'gray.600');
 
@@ -44,19 +44,23 @@ export default function ProjectCard({
       colSpan={1}
       bg={card}
       rounded="md"
-      padding={padding}
+      padding={spacing}
       border="solid 1px"
       borderColor={borderColor}
     >
-      <Heading marginBottom={margin} textAlign="center" size="lg">
+      <Heading marginBottom={spacing} textAlign="center" size="lg">
         {title}
       </Heading>
       <Text>{summary}</Text>
-      <Grid templateColumns="repeat(2, 1fr)" gap={padding} marginTop={margin}>
-        <GridItem colSpan={1}>
-          <Heading paddingLeft="3" size="md">
-            Frontend
-          </Heading>
+      <Grid
+        templateColumns="repeat(2, 1fr)"
+        gap={spacing}
+        marginTop={spacing}
+        display="flex"
+        justifyContent="space-between"
+      >
+        <GridItem colSpan={1} justifyContent="space-around">
+          <Heading size="md">Front-end</Heading>
           <UnorderedList>
             {frontendList.map((frontendListItem) => (
               <ListItem key={uuidv4()}>{frontendListItem}</ListItem>
@@ -64,32 +68,30 @@ export default function ProjectCard({
           </UnorderedList>
         </GridItem>
         <GridItem colSpan={1}>
-          <Heading paddingLeft="3" size="md">
-            Backend
-          </Heading>
+          <Heading size="md">Back-end</Heading>
           <UnorderedList>
             {backendList.map((backendListItem) => (
               <ListItem key={uuidv4()}>{backendListItem}</ListItem>
             ))}
           </UnorderedList>
         </GridItem>
-        <Center>
-          <Link href={deployment} isExternal tabIndex={-1}>
-            <Button colorScheme="purple">
-              Deployment
-              <ExternalLinkIcon ml={margin} />
-            </Button>
-          </Link>
-        </Center>
-        <Center>
-          <Link href={github} isExternal tabIndex={-1}>
-            <Button colorScheme="blue">
-              Github <ExternalLinkIcon ml={margin} />
-            </Button>
-          </Link>
-        </Center>
       </Grid>
-      <Image src={imageUrl} />
+
+      <Box marginTop={spacing} display="flex" justifyContent="space-between">
+        <Link href={deployment} isExternal tabIndex={-1}>
+          <Button colorScheme="purple">
+            Deployment
+            <ExternalLinkIcon ml={spacing} />
+          </Button>
+        </Link>
+        <Link href={github} isExternal tabIndex={-1}>
+          <Button colorScheme="blue">
+            Github <ExternalLinkIcon ml={spacing} />
+          </Button>
+        </Link>
+      </Box>
+
+      <Image marginTop={spacing} src={imageUrl} shadow="md" />
     </GridItem>
   );
 }
