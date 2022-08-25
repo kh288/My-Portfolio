@@ -82,7 +82,7 @@ export default function About() {
           <Box
             bg={card}
             rounded="md"
-            padding={spacing}
+            // padding={spacing}
             marginY={spacing}
             border="solid 1px"
             borderColor={borderColor}
@@ -97,7 +97,11 @@ export default function About() {
               </Center>
             </Box>
 
-            <Grid templateColumns="repeat(2, 1fr)" gap={spacing}>
+            <Grid
+              templateColumns="repeat(2, 1fr)"
+              padding={spacing}
+              gap={spacing}
+            >
               <GridItem colSpan={1}>
                 <Center>
                   <a target="_blank" href={KevinResume} rel="noreferrer">
