@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   Button,
-  Center,
   Grid,
   GridItem,
   Heading,
@@ -44,7 +43,7 @@ export default function ProjectCard({
       colSpan={1}
       bg={card}
       rounded="md"
-      padding={spacing}
+      padding={6}
       gap={spacing}
       border="solid 1px"
       borderColor={borderColor}
