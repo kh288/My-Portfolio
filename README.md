@@ -16,7 +16,7 @@ This simple site was also practice for typesciprt + chakra UI.
 # Deployment
 
 https://kh288.github.io/my-portfolio/
-![Website Preview](./readme-assets/preview-01.png)
+![Website Preview](./readme-assets/preview.png)
 
 # Contact
 
