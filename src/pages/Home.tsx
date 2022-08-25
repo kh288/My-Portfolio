@@ -68,8 +68,8 @@ export default function About() {
             </Center>
             <Center>
               <Text>
-                Passionate about creating good products and adding great value
-                to teams.
+                Passionate about creating effective products and adding
+                intrinsic value to teams.
               </Text>
             </Center>
             <Center>
