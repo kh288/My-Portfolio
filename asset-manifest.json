@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.31d6cfe0.css",
-    "main.js": "/my-portfolio/static/js/main.f1ad6c73.js",
+    "main.js": "/my-portfolio/static/js/main.e36a0cbf.js",
     "static/media/social-burger-app.png": "/my-portfolio/static/media/social-burger-app.82529a6b510bf1e6cb0f.png",
     "static/media/kevins-e-commerce-backend.png": "/my-portfolio/static/media/kevins-e-commerce-backend.45c857a8ec76a55a5ee7.png",
     "static/media/stock-portfolio-analyzer-app.png": "/my-portfolio/static/media/stock-portfolio-analyzer-app.a216906b94782331754e.png",
@@ -15,10 +15,10 @@
     "static/media/social-media-api.webp": "/my-portfolio/static/media/social-media-api.a9181848b21f5b0dbea7.webp",
     "static/media/kevin-headshot-square.webp": "/my-portfolio/static/media/kevin-headshot-square.b201a86906666efa7f35.webp",
     "index.html": "/my-portfolio/index.html",
-    "main.f1ad6c73.js.map": "/my-portfolio/static/js/main.f1ad6c73.js.map"
+    "main.e36a0cbf.js.map": "/my-portfolio/static/js/main.e36a0cbf.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.f1ad6c73.js"
+    "static/js/main.e36a0cbf.js"
   ]
 }
