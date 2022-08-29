@@ -10,10 +10,7 @@ export default function Card({ children }: Props) {
     <Box
       margin={3}
       padding={3}
-      gap={3}
       bg={useColorModeValue('whiteAlpha.600', 'blackAlpha.600')}
-      display="grid"
-      justifyContent="center"
       rounded="lg"
       shadow="lg"
     >
