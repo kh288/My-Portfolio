@@ -42,7 +42,7 @@ export default function About() {
         <SubCard>
           <Center>
             <Heading marginBottom={spacing} as="h1" size="2xl">
-              Front-End Developer
+              Full-Stack Developer
             </Heading>
           </Center>
           <Center>
