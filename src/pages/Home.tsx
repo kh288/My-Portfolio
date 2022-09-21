@@ -74,8 +74,8 @@ export default function About() {
             </Center>
             <Center>
               <Text>
-                Currently working at 2U Inc. as a Web Instructional Specialist
-                on MERN stack.
+                Currently working at 2U Inc. as a Web Development Teaching
+                Assistant on MERN stack.
               </Text>
             </Center>
           </Box>
