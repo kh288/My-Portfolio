@@ -61,10 +61,7 @@ export default function About() {
           </Center>
           <Box id="about" padding={spacing} marginY={spacing}>
             <Center>
-              <Text>
-                Recent UC Berkeley Coding Bootcamp graduate seeking a front-end
-                position.
-              </Text>
+              <Text>Recent UC Berkeley Coding Bootcamp graduate.</Text>
             </Center>
             <Center>
               <Text>
